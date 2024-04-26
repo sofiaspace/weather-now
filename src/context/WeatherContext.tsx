@@ -30,8 +30,9 @@ export const WeatherProvider: FC<PropsWithChildren> = ({ children }) => {
     async function fetchLocation() {
       try {
         const res = await fetch(
-          `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=q427xvB5hJAbVGK5woNBp9G1pi71TvDL&q=${state.location}`
+          `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${process.env.REACT_APP_API_KEY}=${state.location}`
         );
+
         const data = await res.json();
         console.log(data);
         dispatch({
