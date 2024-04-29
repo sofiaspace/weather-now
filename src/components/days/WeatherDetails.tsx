@@ -9,9 +9,9 @@ import {
 import { Text } from "../ui/text/Text";
 import AirQualityBar from "./airQualityBar/AirQualityBar";
 import { dateConverter } from "../ui/dateConverter/DateConverter";
-import { DailyForecast } from "../../interface/dailyForecast";
+import { Forecast } from "../../interface/forecast";
 
-interface WeatherDetailsProps extends DailyForecast {}
+interface WeatherDetailsProps extends Forecast {}
 
 const WeatherDetails: FC<WeatherDetailsProps> = ({ dailyForecast }) => {
   return (

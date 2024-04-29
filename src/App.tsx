@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route index element={<SearchBar />} />
           <Route path="/cityForecast/:cityid" element={<LocationForecast />} />
-          <Route path="/dailyForecast" element={<DailyForecast />} />
+          <Route path="/dailyForecast/:dayId" element={<DailyForecast />} />
         </Routes>
       </AppContainer>
     </BrowserRouter>

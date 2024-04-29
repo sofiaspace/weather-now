@@ -5,9 +5,3 @@ export const dateConverter = (date: string) => {
 
   return formattedDate;
 };
-
-// const date = dailyForecast.Date.split("T")[0];
-// const date = new Date(dailyForecast.Date);
-// const formattedDate = date.getDate();
-
-// console.log(formattedDate);

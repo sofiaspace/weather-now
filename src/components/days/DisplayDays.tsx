@@ -15,7 +15,7 @@ const DisplayDays: FC<DisplayDaysProps> = ({}) => {
         return (
           <DayComponent
             key={i}
-            onClick={() => navigate("/dailyForecast")}
+            onClick={() => navigate(`/dailyForecast/${i}`)}
             dailyForecast={dailyForecast}
           />
         );

@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import { BarContainer, Input } from "./AirQualityBar.style";
-import { DailyForecast } from "../../../interface/dailyForecast";
+import { Forecast } from "../../../interface/forecast";
 
-interface AirQualityBarProps extends DailyForecast {}
+interface AirQualityBarProps extends Forecast {}
 
 const AirQualityBar: FC<AirQualityBarProps> = ({ dailyForecast }) => {
   return (
@@ -14,7 +14,7 @@ const AirQualityBar: FC<AirQualityBarProps> = ({ dailyForecast }) => {
         step="1"
         value={dailyForecast.AirAndPollen[0].Value}
         readOnly={true}
-      ></Input>
+      />
     </BarContainer>
   );
 };

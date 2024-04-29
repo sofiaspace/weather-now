@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
-export const ImageContainer = styled.div`
+interface StyleProps {
+  $icon: string;
+}
+
+export const ImageContainer = styled.div<StyleProps>`
   position: absolute;
   height: 7rem;
   width: 100%;
 
-  background-image: url(/weatherIcons/sunny2.png);
+  background-image: url(${({ $icon }) => $icon});
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: center;

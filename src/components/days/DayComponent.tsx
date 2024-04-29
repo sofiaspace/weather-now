@@ -2,9 +2,9 @@ import React, { FC } from "react";
 import { DaysContainer } from "./DayComponent.styles";
 import WeatherImg from "../ui/weatherImg/WeatherImg";
 import WeatherDetails from "./WeatherDetails";
-import { DailyForecast } from "../../interface/dailyForecast";
+import { Forecast } from "../../interface/forecast";
 
-interface DayComponentProps extends DailyForecast {
+interface DayComponentProps extends Forecast {
   onClick: () => void;
 }
 
