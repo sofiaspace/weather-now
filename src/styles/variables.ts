@@ -10,17 +10,24 @@ export const colors = {
   white: "#FFFFFF",
   black: "#000000",
   lightViolet1: "#C159EC",
-  lighViolet2: "#C427FB",
+  lightViolet2: "#C427FB",
   boxShadow: "#000040",
 };
 
-export const sunriseIcon = "/weatherIcons/sunrise.png";
-export const sunsetIcon = "/weatherIcons/sunset.png";
-export const uvIcon = "/weatherIcons/uvIndex.png";
-export const windIcon = "/weatherIcons/small-wind-icon.png";
-export const temperatureIcon = "/weatherIcons/temperature-icon.png";
-export const rainIcon = "/weatherIcons/rain-icon.png";
-export const snowIcon = "/weatherIcons/snow-icon.png";
+export const smallIcons = {
+  sunriseIcon: "/weatherIcons/sunrise.png",
+  sunsetIcon: "/weatherIcons/sunset.png",
+  uvIcon: "/weatherIcons/uvIndex.png",
+  windIcon: "/weatherIcons/small-wind-icon.png",
+  temperatureIcon: "/weatherIcons/temperature-icon.png",
+  rainIcon: "/weatherIcons/rain-icon.png",
+  snowIcon: "/weatherIcons/snow-icon.png",
+  humidityIcon: "/weatherIcons/humidity.png",
+  sunIcon: "/weatherIcons/sun-icon.png",
+  moonIcon: "/weatherIcons/moon-icon.png",
+  solarIrradiance: "/weatherIcons/solarIrradiance.png",
+  mapIcon: "/weatherIcons/map.png",
+};
 
 // export const Weather = {
 //   Headline: {

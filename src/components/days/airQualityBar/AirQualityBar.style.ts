@@ -12,7 +12,7 @@ export const Input = styled.input`
     to right,
     ${colors.lightBlue2},
     ${colors.lightViolet1} 70%,
-    ${colors.lighViolet2}
+    ${colors.lightViolet2}
   );
   -webkit-appearance: none;
 

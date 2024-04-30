@@ -1,9 +1,14 @@
 import React, { FC, useEffect } from "react";
 import { Text } from "../ui/text/Text";
-import { LocationForecastContainer } from "./LocationForecast.styles";
+import {
+  LocationForecastContainer,
+  StyledDiv,
+} from "./LocationForecast.styles";
 import useWeatherContext from "../../hooks/useWeatherContext";
 import DisplayDays from "../days/DisplayDays";
 import { useNavigate } from "react-router-dom";
+import { smallIcons } from "../../styles/variables";
+import { StyledImage } from "../ui/pngIcon/pngIcon.styles";
 
 interface LocationForecastProps {}
 
@@ -19,11 +24,12 @@ const LocationForecast: FC<LocationForecastProps> = ({}) => {
 
   return (
     <LocationForecastContainer>
-      {/* <StyledDiv> */}
-      <Text variant="body2" color="white">
-        {state.location}
-      </Text>
-      {/* </StyledDiv> */}
+      <StyledDiv>
+        <StyledImage src={smallIcons.mapIcon} alt="map" color="black" />
+        <Text variant="body2" color="white">
+          {state.location}
+        </Text>
+      </StyledDiv>
       <DisplayDays />
     </LocationForecastContainer>
   );

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { colors } from "../../styles/variables";
 
 export const LocationForecastContainer = styled.div`
   text-align: center;
@@ -11,7 +10,8 @@ export const LocationForecastContainer = styled.div`
 `;
 
 export const StyledDiv = styled.div`
-  border: 1px solid ${colors.lightGrey1};
-  border-radius: 1rem;
-  padding: 0.3rem 0;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  gap: 0.1rem;
 `;

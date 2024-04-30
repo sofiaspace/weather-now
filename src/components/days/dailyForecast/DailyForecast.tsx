@@ -1,18 +1,16 @@
 import React, { FC } from "react";
-import { DailyForecastContainer, StyledImage } from "./DailyForecast.styles";
-import { useParams } from "react-router-dom";
 import {
-  Weather,
-  rainIcon,
-  snowIcon,
-  sunriseIcon,
-  sunsetIcon,
-  temperatureIcon,
-  uvIcon,
-  windIcon,
-} from "../../../styles/variables";
+  DailyForecastContainer,
+  Details,
+  StyledContainer,
+  StyledSpan,
+  Title,
+} from "./DailyForecast.styles";
+import { useParams } from "react-router-dom";
+import { Weather, smallIcons } from "../../../styles/variables";
 import { timeConverter } from "../../ui/dateConverter/timeConverter";
 import { Input } from "../airQualityBar/AirQualityBar.style";
+import { StyledImage } from "../../ui/pngIcon/pngIcon.styles";
 
 interface DailyForecastProps {}
 
@@ -30,45 +28,147 @@ const DailyForecast: FC<DailyForecastProps> = ({}) => {
 
   return (
     <DailyForecastContainer>
-      Sunrise <StyledImage src={sunriseIcon} alt="sunrise" /> :{" "}
-      {timeConverter(day.Sun.Rise)}
-      Sunset <StyledImage src={sunsetIcon} alt="sunset" /> :{" "}
-      {timeConverter(day.Sun.Set)}
-      <div>
-        Temperature <StyledImage src={temperatureIcon} alt="sunrise" />: H:
-        {day.Temperature.Maximum.Value}°C L:
-        {day.Temperature.Minimum.Value}°C{" "}
-      </div>
-      <div>
-        Feels like: H:{day.RealFeelTemperature.Maximum.Value}°C L:
-        {day.RealFeelTemperature.Minimum.Value}°C{" "}
-      </div>
-      <div>
-        UV Index <StyledImage src={uvIcon} alt="uvIndex" /> :{" "}
-        {day.AirAndPollen[5].Category} {day.AirAndPollen[5].Value}
-        <Input
-          type="range"
-          min="0"
-          max="10.499"
-          step="2.5"
-          value={day.AirAndPollen[5].Value}
-          readOnly={true}
-        />
-      </div>
-      <div>
-        Wind <StyledImage src={windIcon} alt="wind" /> :
-        {day.Day.Wind.Speed.Value} km/h Direction:{" "}
-        {day.Day.Wind.Direction.Localized}
-      </div>
-      <div>
-        Rain <StyledImage src={rainIcon} alt="sunset" />: {day.Day.Rain.Value}{" "}
-        mm Hours of Rain: {day.Day.HoursOfRain}
-      </div>
-      <div>
-        Snow: <StyledImage src={snowIcon} alt="wind" />: {day.Day.Snow.Value} cm
-        Hours of snow: {day.Day.HoursOfSnow}
-      </div>
-      <div>Day description: {day.Day.LongPhrase}</div>
+      <StyledContainer>
+        <Title>
+          <StyledImage
+            src={smallIcons.sunriseIcon}
+            alt="sunrise"
+            color="white"
+          />
+          Sunrise
+        </Title>
+        <Details>{timeConverter(day.Sun.Rise)}</Details>
+      </StyledContainer>
+
+      <StyledContainer>
+        <Title>
+          <StyledImage src={smallIcons.sunsetIcon} alt="sunset" color="white" />
+          Sunset
+        </Title>
+        <Details>{timeConverter(day.Sun.Set)}</Details>
+      </StyledContainer>
+
+      <StyledContainer>
+        <Title>
+          <StyledImage
+            src={smallIcons.temperatureIcon}
+            alt="temperature"
+            color="white"
+          />
+          Temperature{" "}
+        </Title>
+        <Details>
+          H:
+          {day.Temperature.Maximum.Value}°C L:
+          {day.Temperature.Minimum.Value}°C
+        </Details>
+      </StyledContainer>
+
+      <StyledContainer>
+        <Title>Feels like</Title>
+        <Details>
+          H:
+          {day.RealFeelTemperature.Maximum.Value}°C L:
+          {day.RealFeelTemperature.Minimum.Value}°C
+        </Details>
+      </StyledContainer>
+
+      <StyledContainer>
+        <Title>
+          <StyledImage
+            src={smallIcons.humidityIcon}
+            alt="humidity"
+            color="white"
+          />
+          RH
+        </Title>
+        <Details>{day.Day.RelativeHumidity.Average}%</Details>
+      </StyledContainer>
+
+      <StyledContainer>
+        <Title>
+          <StyledImage src={smallIcons.uvIcon} alt="uvIndex" color="white" />
+          UV Index
+        </Title>
+        <Details>
+          <span>
+            {day.AirAndPollen[5].Category} {day.AirAndPollen[5].Value}
+          </span>
+          <StyledSpan>
+            <Input
+              type="range"
+              min="0"
+              max="10.499"
+              step="2.5"
+              value={day.AirAndPollen[5].Value}
+              readOnly={true}
+            />
+          </StyledSpan>
+        </Details>
+      </StyledContainer>
+
+      <StyledContainer>
+        <Title>
+          <StyledImage
+            src={smallIcons.solarIrradiance}
+            alt="solarIrradiance"
+            color="white"
+          />
+          Solar Irradiance
+        </Title>
+        <Details>
+          <span>{day.Day.SolarIrradiance.Value} W/m²</span>
+        </Details>
+      </StyledContainer>
+
+      <StyledContainer>
+        <Title>
+          <StyledImage src={smallIcons.rainIcon} alt="rain" color="white" />
+          Rain
+        </Title>
+        <Details>
+          <span>{day.Day.Rain.Value} mm</span>
+          <span>Hours of Rain {day.Day.HoursOfRain}</span>
+        </Details>
+      </StyledContainer>
+
+      <StyledContainer>
+        <Title>
+          <StyledImage src={smallIcons.windIcon} alt="wind" color="white" />
+          Wind
+        </Title>
+        <Details>
+          <span>{day.Day.Wind.Speed.Value} km/h </span>
+          <span>Direction {day.Day.Wind.Direction.Localized}</span>
+        </Details>
+      </StyledContainer>
+
+      <StyledContainer>
+        <Title>
+          <StyledImage src={smallIcons.snowIcon} alt="snow" color="white" />
+          Snow
+        </Title>
+        <Details>
+          <span>{day.Day.Snow.Value} cm</span>
+          <span>Hours of Snow {day.Day.HoursOfSnow}</span>
+        </Details>
+      </StyledContainer>
+
+      <StyledContainer>
+        <Title>
+          <StyledImage src={smallIcons.sunIcon} alt="sunIcon" color="white" />
+          Day description{" "}
+        </Title>
+        <Details>{day.Day.LongPhrase}</Details>
+      </StyledContainer>
+
+      <StyledContainer>
+        <Title>
+          <StyledImage src={smallIcons.moonIcon} alt="moonIcon" color="white" />
+          Night description{" "}
+        </Title>
+        <Details>{day.Night.LongPhrase}</Details>
+      </StyledContainer>
     </DailyForecastContainer>
   );
 };

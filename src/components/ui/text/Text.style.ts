@@ -32,13 +32,3 @@ export const TextContainer = styled.span<{
 
   ${({ color }) => `color: ${colors[color]}`};
 `;
-
-/* export const Text = styled.span`
-  margin-left: 10px;
-  margin-right: 10px;
-`; */
-
-/* export const TextStyles = {
-  headline: "4rem",
-  title3: "2rem",
-}; */

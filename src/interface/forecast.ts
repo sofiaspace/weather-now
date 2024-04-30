@@ -22,6 +22,17 @@ export interface Forecast {
       };
       HoursOfRain: number;
       HoursOfSnow: number;
+      RelativeHumidity: {
+        Minimum: number;
+        Maximum: number;
+        Average: number;
+      };
+      SolarIrradiance: {
+        Value: number;
+      };
+    };
+    Night: {
+      LongPhrase: string;
     };
     Sun: {
       Rise: string;
