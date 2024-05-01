@@ -1,12 +1,10 @@
 import styled from "styled-components";
 
 export const LocationForecastContainer = styled.div`
-  text-align: center;
-  height: inherit;
+  margin-top: auto;
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
 `;
 
 export const StyledDiv = styled.div`

@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { TextColor, TextVariant } from "./Text.types";
 import { colors } from "../../../styles/variables";
+import { device } from "../../../styles/mediaBreakpoints";
 
 export const TextContainer = styled.span<{
   type: TextVariant;
@@ -26,6 +27,19 @@ export const TextContainer = styled.span<{
       case "headline":
         return css`
           font-size: 6rem;
+
+          @media ${device.xl} {
+            font-size: 5rem;
+          }
+          @media ${device.md} {
+            font-size: 4rem;
+          }
+          @media ${device.sm} {
+            font-size: 3rem;
+          }
+          @media ${device.xs} {
+            font-size: 2rem;
+          }
         `;
     }
   }};

@@ -1,10 +1,37 @@
 import styled from "styled-components";
 import { colors } from "../../../styles/variables";
+import { device } from "../../../styles/mediaBreakpoints";
+
+export const MainForecastContainer = styled.div`
+  margin: auto 0;
+`;
+
+export const TextWrapper = styled.div`
+  padding-bottom: 1.8rem;
+  text-align: center;
+`;
 
 export const DailyForecastContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
+
+  @media ${device.lg} {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.6rem;
+  }
+  @media ${device.md} {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  @media ${device.sm} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem;
+  }
 `;
 
 export const StyledContainer = styled.div`
@@ -31,11 +58,15 @@ export const Title = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 0.3rem;
+
+  @media ${device.sm} {
+    display: block;
+  }
 `;
 
 export const Details = styled.div`
   font-size: 0.8rem;
-  color: #ebebf5;
+  color: ${colors.lightText1};
 
   display: flex;
   flex-direction: column;

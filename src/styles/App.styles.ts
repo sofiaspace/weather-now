@@ -1,18 +1,16 @@
 import styled from "styled-components";
-import { colors } from "./variables";
+import { device } from "./mediaBreakpoints";
 
 export const AppContainer = styled.div`
-  background: linear-gradient(
-    to right bottom,
-    ${colors.darkerBlue1},
-    ${colors.darkerBlue2}
-  );
-  border-radius: 2rem;
-  height: inherit;
-  margin: 0 2rem;
+  min-height: 100%;
   padding: 2rem;
   flex: 1;
 
   display: flex;
   flex-direction: column;
+  width: inherit;
+
+  @media ${device.md} {
+    padding: 1rem 1rem;
+  }
 `;

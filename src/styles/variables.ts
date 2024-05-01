@@ -1718,686 +1718,18 @@ export const smallIcons = {
 
 export const Weather = {
   Headline: {
-    EffectiveDate: "2024-04-30T08:00:00+03:00",
-    EffectiveEpochDate: 1714453200,
-    Severity: 7,
-    Text: "Breezy Tuesday",
-    Category: "wind",
-    EndDate: "2024-04-30T20:00:00+03:00",
-    EndEpochDate: 1714496400,
+    EffectiveDate: "2024-05-04T08:00:00+03:00",
+    EffectiveEpochDate: 1714798800,
+    Severity: 4,
+    Text: "Pleasant Saturday",
+    Category: "mild",
+    EndDate: null,
+    EndEpochDate: null,
     MobileLink:
       "http://www.accuweather.com/en/gr/athens/182536/daily-weather-forecast/182536?unit=c&lang=en-us",
     Link: "http://www.accuweather.com/en/gr/athens/182536/daily-weather-forecast/182536?unit=c&lang=en-us",
   },
   DailyForecasts: [
-    {
-      Date: "2024-04-29T07:00:00+03:00",
-      EpochDate: 1714363200,
-      Sun: {
-        Rise: "2024-04-29T06:31:00+03:00",
-        EpochRise: 1714361460,
-        Set: "2024-04-29T20:15:00+03:00",
-        EpochSet: 1714410900,
-      },
-      Moon: {
-        Rise: "2024-04-29T01:08:00+03:00",
-        EpochRise: 1714342080,
-        Set: "2024-04-29T10:08:00+03:00",
-        EpochSet: 1714374480,
-        Phase: "WaningGibbous",
-        Age: 21,
-      },
-      Temperature: {
-        Minimum: {
-          Value: 14,
-          Unit: "C",
-          UnitType: 17,
-        },
-        Maximum: {
-          Value: 24.4,
-          Unit: "C",
-          UnitType: 17,
-        },
-      },
-      RealFeelTemperature: {
-        Minimum: {
-          Value: 12.6,
-          Unit: "C",
-          UnitType: 17,
-          Phrase: "Cool",
-        },
-        Maximum: {
-          Value: 26.1,
-          Unit: "C",
-          UnitType: 17,
-          Phrase: "Pleasant",
-        },
-      },
-      RealFeelTemperatureShade: {
-        Minimum: {
-          Value: 12.6,
-          Unit: "C",
-          UnitType: 17,
-          Phrase: "Cool",
-        },
-        Maximum: {
-          Value: 22.4,
-          Unit: "C",
-          UnitType: 17,
-          Phrase: "Pleasant",
-        },
-      },
-      HoursOfSun: 12.7,
-      DegreeDaySummary: {
-        Heating: {
-          Value: 0,
-          Unit: "C",
-          UnitType: 17,
-        },
-        Cooling: {
-          Value: 1,
-          Unit: "C",
-          UnitType: 17,
-        },
-      },
-      AirAndPollen: [
-        {
-          Name: "AirQuality",
-          Value: 0,
-          Category: "Good",
-          CategoryValue: 1,
-          Type: "Ozone",
-        },
-        {
-          Name: "Grass",
-          Value: 20,
-          Category: "High",
-          CategoryValue: 3,
-        },
-        {
-          Name: "Mold",
-          Value: 32767,
-          Category: "High",
-          CategoryValue: 3,
-        },
-        {
-          Name: "Ragweed",
-          Value: 0,
-          Category: "Low",
-          CategoryValue: 1,
-        },
-        {
-          Name: "Tree",
-          Value: 133,
-          Category: "High",
-          CategoryValue: 3,
-        },
-        {
-          Name: "UVIndex",
-          Value: 9,
-          Category: "Very High",
-          CategoryValue: 4,
-        },
-      ],
-      Day: {
-        Icon: 1,
-        IconPhrase: "Sunny",
-        HasPrecipitation: false,
-        ShortPhrase: "Sunny and nice",
-        LongPhrase: "Sunny and nice",
-        PrecipitationProbability: 0,
-        ThunderstormProbability: 0,
-        RainProbability: 0,
-        SnowProbability: 0,
-        IceProbability: 0,
-        Wind: {
-          Speed: {
-            Value: 20.4,
-            Unit: "km/h",
-            UnitType: 7,
-          },
-          Direction: {
-            Degrees: 14,
-            Localized: "NNE",
-            English: "NNE",
-          },
-        },
-        WindGust: {
-          Speed: {
-            Value: 38.9,
-            Unit: "km/h",
-            UnitType: 7,
-          },
-          Direction: {
-            Degrees: 11,
-            Localized: "N",
-            English: "N",
-          },
-        },
-        TotalLiquid: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        Rain: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        Snow: {
-          Value: 0,
-          Unit: "cm",
-          UnitType: 4,
-        },
-        Ice: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        HoursOfPrecipitation: 0,
-        HoursOfRain: 0,
-        HoursOfSnow: 0,
-        HoursOfIce: 0,
-        CloudCover: 4,
-        Evapotranspiration: {
-          Value: 5.6,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        SolarIrradiance: {
-          Value: 8342,
-          Unit: "W/m²",
-          UnitType: 33,
-        },
-        RelativeHumidity: {
-          Minimum: 25,
-          Maximum: 57,
-          Average: 35,
-        },
-        WetBulbTemperature: {
-          Minimum: {
-            Value: 12.4,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Maximum: {
-            Value: 13.9,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Average: {
-            Value: 13.1,
-            Unit: "C",
-            UnitType: 17,
-          },
-        },
-        WetBulbGlobeTemperature: {
-          Minimum: {
-            Value: 16.3,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Maximum: {
-            Value: 18.8,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Average: {
-            Value: 17.9,
-            Unit: "C",
-            UnitType: 17,
-          },
-        },
-      },
-      Night: {
-        Icon: 34,
-        IconPhrase: "Mostly clear",
-        HasPrecipitation: false,
-        ShortPhrase: "Mainly clear",
-        LongPhrase: "Mainly clear",
-        PrecipitationProbability: 1,
-        ThunderstormProbability: 0,
-        RainProbability: 1,
-        SnowProbability: 0,
-        IceProbability: 0,
-        Wind: {
-          Speed: {
-            Value: 13,
-            Unit: "km/h",
-            UnitType: 7,
-          },
-          Direction: {
-            Degrees: 360,
-            Localized: "N",
-            English: "N",
-          },
-        },
-        WindGust: {
-          Speed: {
-            Value: 25.9,
-            Unit: "km/h",
-            UnitType: 7,
-          },
-          Direction: {
-            Degrees: 21,
-            Localized: "NNE",
-            English: "NNE",
-          },
-        },
-        TotalLiquid: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        Rain: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        Snow: {
-          Value: 0,
-          Unit: "cm",
-          UnitType: 4,
-        },
-        Ice: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        HoursOfPrecipitation: 0,
-        HoursOfRain: 0,
-        HoursOfSnow: 0,
-        HoursOfIce: 0,
-        CloudCover: 12,
-        Evapotranspiration: {
-          Value: 0.8,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        SolarIrradiance: {
-          Value: 148.1,
-          Unit: "W/m²",
-          UnitType: 33,
-        },
-        RelativeHumidity: {
-          Minimum: 37,
-          Maximum: 70,
-          Average: 58,
-        },
-        WetBulbTemperature: {
-          Minimum: {
-            Value: 11.3,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Maximum: {
-            Value: 12.4,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Average: {
-            Value: 11.8,
-            Unit: "C",
-            UnitType: 17,
-          },
-        },
-        WetBulbGlobeTemperature: {
-          Minimum: {
-            Value: 13.6,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Maximum: {
-            Value: 16.8,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Average: {
-            Value: 14.8,
-            Unit: "C",
-            UnitType: 17,
-          },
-        },
-      },
-      Sources: ["AccuWeather"],
-      MobileLink:
-        "http://www.accuweather.com/en/gr/athens/182536/daily-weather-forecast/182536?day=1&unit=c&lang=en-us",
-      Link: "http://www.accuweather.com/en/gr/athens/182536/daily-weather-forecast/182536?day=1&unit=c&lang=en-us",
-    },
-    {
-      Date: "2024-04-30T07:00:00+03:00",
-      EpochDate: 1714449600,
-      Sun: {
-        Rise: "2024-04-30T06:30:00+03:00",
-        EpochRise: 1714447800,
-        Set: "2024-04-30T20:15:00+03:00",
-        EpochSet: 1714497300,
-      },
-      Moon: {
-        Rise: "2024-04-30T01:59:00+03:00",
-        EpochRise: 1714431540,
-        Set: "2024-04-30T11:16:00+03:00",
-        EpochSet: 1714464960,
-        Phase: "WaningGibbous",
-        Age: 22,
-      },
-      Temperature: {
-        Minimum: {
-          Value: 16.4,
-          Unit: "C",
-          UnitType: 17,
-        },
-        Maximum: {
-          Value: 22.8,
-          Unit: "C",
-          UnitType: 17,
-        },
-      },
-      RealFeelTemperature: {
-        Minimum: {
-          Value: 15.6,
-          Unit: "C",
-          UnitType: 17,
-          Phrase: "Cool",
-        },
-        Maximum: {
-          Value: 22.2,
-          Unit: "C",
-          UnitType: 17,
-          Phrase: "Pleasant",
-        },
-      },
-      RealFeelTemperatureShade: {
-        Minimum: {
-          Value: 15.6,
-          Unit: "C",
-          UnitType: 17,
-          Phrase: "Cool",
-        },
-        Maximum: {
-          Value: 20.7,
-          Unit: "C",
-          UnitType: 17,
-          Phrase: "Pleasant",
-        },
-      },
-      HoursOfSun: 3.5,
-      DegreeDaySummary: {
-        Heating: {
-          Value: 0,
-          Unit: "C",
-          UnitType: 17,
-        },
-        Cooling: {
-          Value: 2,
-          Unit: "C",
-          UnitType: 17,
-        },
-      },
-      AirAndPollen: [
-        {
-          Name: "AirQuality",
-          Value: 0,
-          Category: "Good",
-          CategoryValue: 1,
-          Type: "Ozone",
-        },
-        {
-          Name: "Grass",
-          Value: 9,
-          Category: "Moderate",
-          CategoryValue: 2,
-        },
-        {
-          Name: "Mold",
-          Value: 32767,
-          Category: "High",
-          CategoryValue: 3,
-        },
-        {
-          Name: "Ragweed",
-          Value: 0,
-          Category: "Low",
-          CategoryValue: 1,
-        },
-        {
-          Name: "Tree",
-          Value: 74,
-          Category: "Moderate",
-          CategoryValue: 2,
-        },
-        {
-          Name: "UVIndex",
-          Value: 3,
-          Category: "Moderate",
-          CategoryValue: 2,
-        },
-      ],
-      Day: {
-        Icon: 6,
-        IconPhrase: "Mostly cloudy",
-        HasPrecipitation: false,
-        ShortPhrase: "Partly sunny and breezy",
-        LongPhrase: "Sun and areas of low clouds, breezy and pleasant",
-        PrecipitationProbability: 1,
-        ThunderstormProbability: 0,
-        RainProbability: 1,
-        SnowProbability: 0,
-        IceProbability: 0,
-        Wind: {
-          Speed: {
-            Value: 20.4,
-            Unit: "km/h",
-            UnitType: 7,
-          },
-          Direction: {
-            Degrees: 358,
-            Localized: "N",
-            English: "N",
-          },
-        },
-        WindGust: {
-          Speed: {
-            Value: 48.2,
-            Unit: "km/h",
-            UnitType: 7,
-          },
-          Direction: {
-            Degrees: 357,
-            Localized: "N",
-            English: "N",
-          },
-        },
-        TotalLiquid: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        Rain: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        Snow: {
-          Value: 0,
-          Unit: "cm",
-          UnitType: 4,
-        },
-        Ice: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        HoursOfPrecipitation: 0,
-        HoursOfRain: 0,
-        HoursOfSnow: 0,
-        HoursOfIce: 0,
-        CloudCover: 81,
-        Evapotranspiration: {
-          Value: 3.3,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        SolarIrradiance: {
-          Value: 4431.9,
-          Unit: "W/m²",
-          UnitType: 33,
-        },
-        RelativeHumidity: {
-          Minimum: 43,
-          Maximum: 61,
-          Average: 50,
-        },
-        WetBulbTemperature: {
-          Minimum: {
-            Value: 12.1,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Maximum: {
-            Value: 15.1,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Average: {
-            Value: 14.2,
-            Unit: "C",
-            UnitType: 17,
-          },
-        },
-        WetBulbGlobeTemperature: {
-          Minimum: {
-            Value: 14.7,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Maximum: {
-            Value: 18.9,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Average: {
-            Value: 17.3,
-            Unit: "C",
-            UnitType: 17,
-          },
-        },
-      },
-      Night: {
-        Icon: 8,
-        IconPhrase: "Dreary",
-        HasPrecipitation: false,
-        ShortPhrase: "Low clouds",
-        LongPhrase: "Low clouds",
-        PrecipitationProbability: 3,
-        ThunderstormProbability: 0,
-        RainProbability: 3,
-        SnowProbability: 0,
-        IceProbability: 0,
-        Wind: {
-          Speed: {
-            Value: 13,
-            Unit: "km/h",
-            UnitType: 7,
-          },
-          Direction: {
-            Degrees: 360,
-            Localized: "N",
-            English: "N",
-          },
-        },
-        WindGust: {
-          Speed: {
-            Value: 29.6,
-            Unit: "km/h",
-            UnitType: 7,
-          },
-          Direction: {
-            Degrees: 5,
-            Localized: "N",
-            English: "N",
-          },
-        },
-        TotalLiquid: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        Rain: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        Snow: {
-          Value: 0,
-          Unit: "cm",
-          UnitType: 4,
-        },
-        Ice: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        HoursOfPrecipitation: 0,
-        HoursOfRain: 0,
-        HoursOfSnow: 0,
-        HoursOfIce: 0,
-        CloudCover: 83,
-        Evapotranspiration: {
-          Value: 0.5,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        SolarIrradiance: {
-          Value: 160.6,
-          Unit: "W/m²",
-          UnitType: 33,
-        },
-        RelativeHumidity: {
-          Minimum: 56,
-          Maximum: 69,
-          Average: 66,
-        },
-        WetBulbTemperature: {
-          Minimum: {
-            Value: 13.5,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Maximum: {
-            Value: 14.4,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Average: {
-            Value: 14.1,
-            Unit: "C",
-            UnitType: 17,
-          },
-        },
-        WetBulbGlobeTemperature: {
-          Minimum: {
-            Value: 15.2,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Maximum: {
-            Value: 16.8,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Average: {
-            Value: 15.9,
-            Unit: "C",
-            UnitType: 17,
-          },
-        },
-      },
-      Sources: ["AccuWeather"],
-      MobileLink:
-        "http://www.accuweather.com/en/gr/athens/182536/daily-weather-forecast/182536?day=2&unit=c&lang=en-us",
-      Link: "http://www.accuweather.com/en/gr/athens/182536/daily-weather-forecast/182536?day=2&unit=c&lang=en-us",
-    },
     {
       Date: "2024-05-01T07:00:00+03:00",
       EpochDate: 1714536000,
@@ -2417,25 +1749,25 @@ export const Weather = {
       },
       Temperature: {
         Minimum: {
-          Value: 14.3,
+          Value: 13.8,
           Unit: "C",
           UnitType: 17,
         },
         Maximum: {
-          Value: 23.5,
+          Value: 23.3,
           Unit: "C",
           UnitType: 17,
         },
       },
       RealFeelTemperature: {
         Minimum: {
-          Value: 13.7,
+          Value: 12.9,
           Unit: "C",
           UnitType: 17,
           Phrase: "Cool",
         },
         Maximum: {
-          Value: 25.2,
+          Value: 24.7,
           Unit: "C",
           UnitType: 17,
           Phrase: "Pleasant",
@@ -2443,19 +1775,19 @@ export const Weather = {
       },
       RealFeelTemperatureShade: {
         Minimum: {
-          Value: 13.7,
+          Value: 12.9,
           Unit: "C",
           UnitType: 17,
           Phrase: "Cool",
         },
         Maximum: {
-          Value: 21.7,
+          Value: 21.4,
           Unit: "C",
           UnitType: 17,
           Phrase: "Pleasant",
         },
       },
-      HoursOfSun: 8.9,
+      HoursOfSun: 8.6,
       DegreeDaySummary: {
         Heating: {
           Value: 0,
@@ -2478,9 +1810,9 @@ export const Weather = {
         },
         {
           Name: "Grass",
-          Value: 51,
-          Category: "High",
-          CategoryValue: 3,
+          Value: 12,
+          Category: "Moderate",
+          CategoryValue: 2,
         },
         {
           Name: "Mold",
@@ -2490,13 +1822,13 @@ export const Weather = {
         },
         {
           Name: "Ragweed",
-          Value: 2,
+          Value: 0,
           Category: "Low",
           CategoryValue: 1,
         },
         {
           Name: "Tree",
-          Value: 944,
+          Value: 141,
           Category: "High",
           CategoryValue: 3,
         },
@@ -2508,11 +1840,11 @@ export const Weather = {
         },
       ],
       Day: {
-        Icon: 3,
-        IconPhrase: "Partly sunny",
+        Icon: 4,
+        IconPhrase: "Intermittent clouds",
         HasPrecipitation: false,
-        ShortPhrase: "Partly sunny and nice",
-        LongPhrase: "Partly sunny and nice",
+        ShortPhrase: "Increasing amounts of sun",
+        LongPhrase: "Increasing amounts of sun",
         PrecipitationProbability: 2,
         ThunderstormProbability: 0,
         RainProbability: 2,
@@ -2525,19 +1857,19 @@ export const Weather = {
             UnitType: 7,
           },
           Direction: {
-            Degrees: 358,
+            Degrees: 357,
             Localized: "N",
             English: "N",
           },
         },
         WindGust: {
           Speed: {
-            Value: 37,
+            Value: 35.2,
             Unit: "km/h",
             UnitType: 7,
           },
           Direction: {
-            Degrees: 350,
+            Degrees: 355,
             Localized: "N",
             English: "N",
           },
@@ -2566,386 +1898,52 @@ export const Weather = {
         HoursOfRain: 0,
         HoursOfSnow: 0,
         HoursOfIce: 0,
-        CloudCover: 40,
+        CloudCover: 43,
         Evapotranspiration: {
-          Value: 4.1,
+          Value: 3.8,
           Unit: "mm",
           UnitType: 3,
         },
         SolarIrradiance: {
-          Value: 7234.5,
+          Value: 7194.5,
           Unit: "W/m²",
           UnitType: 33,
         },
         RelativeHumidity: {
-          Minimum: 46,
-          Maximum: 66,
-          Average: 53,
+          Minimum: 47,
+          Maximum: 70,
+          Average: 55,
         },
         WetBulbTemperature: {
-          Minimum: {
-            Value: 13.7,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Maximum: {
-            Value: 16.2,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Average: {
-            Value: 15.2,
-            Unit: "C",
-            UnitType: 17,
-          },
-        },
-        WetBulbGlobeTemperature: {
-          Minimum: {
-            Value: 16.2,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Maximum: {
-            Value: 20.3,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Average: {
-            Value: 18.7,
-            Unit: "C",
-            UnitType: 17,
-          },
-        },
-      },
-      Night: {
-        Icon: 34,
-        IconPhrase: "Mostly clear",
-        HasPrecipitation: false,
-        ShortPhrase: "Mainly clear",
-        LongPhrase: "Mainly clear",
-        PrecipitationProbability: 3,
-        ThunderstormProbability: 0,
-        RainProbability: 3,
-        SnowProbability: 0,
-        IceProbability: 0,
-        Wind: {
-          Speed: {
-            Value: 9.3,
-            Unit: "km/h",
-            UnitType: 7,
-          },
-          Direction: {
-            Degrees: 28,
-            Localized: "NNE",
-            English: "NNE",
-          },
-        },
-        WindGust: {
-          Speed: {
-            Value: 20.4,
-            Unit: "km/h",
-            UnitType: 7,
-          },
-          Direction: {
-            Degrees: 21,
-            Localized: "NNE",
-            English: "NNE",
-          },
-        },
-        TotalLiquid: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        Rain: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        Snow: {
-          Value: 0,
-          Unit: "cm",
-          UnitType: 4,
-        },
-        Ice: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        HoursOfPrecipitation: 0,
-        HoursOfRain: 0,
-        HoursOfSnow: 0,
-        HoursOfIce: 0,
-        CloudCover: 29,
-        Evapotranspiration: {
-          Value: 0.5,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        SolarIrradiance: {
-          Value: 177.7,
-          Unit: "W/m²",
-          UnitType: 33,
-        },
-        RelativeHumidity: {
-          Minimum: 53,
-          Maximum: 77,
-          Average: 68,
-        },
-        WetBulbTemperature: {
-          Minimum: {
-            Value: 12.3,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Maximum: {
-            Value: 15.3,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Average: {
-            Value: 13.6,
-            Unit: "C",
-            UnitType: 17,
-          },
-        },
-        WetBulbGlobeTemperature: {
           Minimum: {
             Value: 14.6,
             Unit: "C",
             UnitType: 17,
           },
           Maximum: {
-            Value: 19,
+            Value: 16.1,
             Unit: "C",
             UnitType: 17,
           },
           Average: {
-            Value: 16.3,
-            Unit: "C",
-            UnitType: 17,
-          },
-        },
-      },
-      Sources: ["AccuWeather"],
-      MobileLink:
-        "http://www.accuweather.com/en/gr/athens/182536/daily-weather-forecast/182536?day=3&unit=c&lang=en-us",
-      Link: "http://www.accuweather.com/en/gr/athens/182536/daily-weather-forecast/182536?day=3&unit=c&lang=en-us",
-    },
-    {
-      Date: "2024-05-02T07:00:00+03:00",
-      EpochDate: 1714622400,
-      Sun: {
-        Rise: "2024-05-02T06:27:00+03:00",
-        EpochRise: 1714620420,
-        Set: "2024-05-02T20:17:00+03:00",
-        EpochSet: 1714670220,
-      },
-      Moon: {
-        Rise: "2024-05-02T03:19:00+03:00",
-        EpochRise: 1714609140,
-        Set: "2024-05-02T13:41:00+03:00",
-        EpochSet: 1714646460,
-        Phase: "WaningCrescent",
-        Age: 24,
-      },
-      Temperature: {
-        Minimum: {
-          Value: 15.2,
-          Unit: "C",
-          UnitType: 17,
-        },
-        Maximum: {
-          Value: 24.3,
-          Unit: "C",
-          UnitType: 17,
-        },
-      },
-      RealFeelTemperature: {
-        Minimum: {
-          Value: 14,
-          Unit: "C",
-          UnitType: 17,
-          Phrase: "Cool",
-        },
-        Maximum: {
-          Value: 26.5,
-          Unit: "C",
-          UnitType: 17,
-          Phrase: "Very Warm",
-        },
-      },
-      RealFeelTemperatureShade: {
-        Minimum: {
-          Value: 14,
-          Unit: "C",
-          UnitType: 17,
-          Phrase: "Cool",
-        },
-        Maximum: {
-          Value: 22.4,
-          Unit: "C",
-          UnitType: 17,
-          Phrase: "Pleasant",
-        },
-      },
-      HoursOfSun: 12.7,
-      DegreeDaySummary: {
-        Heating: {
-          Value: 0,
-          Unit: "C",
-          UnitType: 17,
-        },
-        Cooling: {
-          Value: 2,
-          Unit: "C",
-          UnitType: 17,
-        },
-      },
-      AirAndPollen: [
-        {
-          Name: "AirQuality",
-          Value: 0,
-          Category: "Good",
-          CategoryValue: 1,
-          Type: "Ozone",
-        },
-        {
-          Name: "Grass",
-          Value: 104,
-          Category: "High",
-          CategoryValue: 3,
-        },
-        {
-          Name: "Mold",
-          Value: 32767,
-          Category: "High",
-          CategoryValue: 3,
-        },
-        {
-          Name: "Ragweed",
-          Value: 5,
-          Category: "Low",
-          CategoryValue: 1,
-        },
-        {
-          Name: "Tree",
-          Value: 2076,
-          Category: "Very High",
-          CategoryValue: 4,
-        },
-        {
-          Name: "UVIndex",
-          Value: 9,
-          Category: "Very High",
-          CategoryValue: 4,
-        },
-      ],
-      Day: {
-        Icon: 1,
-        IconPhrase: "Sunny",
-        HasPrecipitation: false,
-        ShortPhrase: "Sunny and nice",
-        LongPhrase: "Sunny and nice",
-        PrecipitationProbability: 2,
-        ThunderstormProbability: 0,
-        RainProbability: 2,
-        SnowProbability: 0,
-        IceProbability: 0,
-        Wind: {
-          Speed: {
-            Value: 14.8,
-            Unit: "km/h",
-            UnitType: 7,
-          },
-          Direction: {
-            Degrees: 162,
-            Localized: "SSE",
-            English: "SSE",
-          },
-        },
-        WindGust: {
-          Speed: {
-            Value: 33.3,
-            Unit: "km/h",
-            UnitType: 7,
-          },
-          Direction: {
-            Degrees: 197,
-            Localized: "SSW",
-            English: "SSW",
-          },
-        },
-        TotalLiquid: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        Rain: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        Snow: {
-          Value: 0,
-          Unit: "cm",
-          UnitType: 4,
-        },
-        Ice: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        HoursOfPrecipitation: 0,
-        HoursOfRain: 0,
-        HoursOfSnow: 0,
-        HoursOfIce: 0,
-        CloudCover: 9,
-        Evapotranspiration: {
-          Value: 4.8,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        SolarIrradiance: {
-          Value: 8421.6,
-          Unit: "W/m²",
-          UnitType: 33,
-        },
-        RelativeHumidity: {
-          Minimum: 44,
-          Maximum: 65,
-          Average: 52,
-        },
-        WetBulbTemperature: {
-          Minimum: {
-            Value: 13.7,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Maximum: {
-            Value: 16.5,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Average: {
-            Value: 15.7,
+            Value: 15.3,
             Unit: "C",
             UnitType: 17,
           },
         },
         WetBulbGlobeTemperature: {
           Minimum: {
-            Value: 16.6,
+            Value: 16.1,
             Unit: "C",
             UnitType: 17,
           },
           Maximum: {
-            Value: 20.8,
+            Value: 20.1,
             Unit: "C",
             UnitType: 17,
           },
           Average: {
-            Value: 19.5,
+            Value: 18.5,
             Unit: "C",
             UnitType: 17,
           },
@@ -2957,9 +1955,9 @@ export const Weather = {
         HasPrecipitation: false,
         ShortPhrase: "Clear",
         LongPhrase: "Clear",
-        PrecipitationProbability: 0,
+        PrecipitationProbability: 3,
         ThunderstormProbability: 0,
-        RainProbability: 0,
+        RainProbability: 3,
         SnowProbability: 0,
         IceProbability: 0,
         Wind: {
@@ -2969,355 +1967,21 @@ export const Weather = {
             UnitType: 7,
           },
           Direction: {
-            Degrees: 267,
-            Localized: "W",
-            English: "W",
+            Degrees: 24,
+            Localized: "NNE",
+            English: "NNE",
           },
         },
         WindGust: {
           Speed: {
-            Value: 22.2,
+            Value: 24.1,
             Unit: "km/h",
             UnitType: 7,
           },
           Direction: {
-            Degrees: 193,
-            Localized: "SSW",
-            English: "SSW",
-          },
-        },
-        TotalLiquid: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        Rain: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        Snow: {
-          Value: 0,
-          Unit: "cm",
-          UnitType: 4,
-        },
-        Ice: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        HoursOfPrecipitation: 0,
-        HoursOfRain: 0,
-        HoursOfSnow: 0,
-        HoursOfIce: 0,
-        CloudCover: 1,
-        Evapotranspiration: {
-          Value: 0.5,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        SolarIrradiance: {
-          Value: 181.2,
-          Unit: "W/m²",
-          UnitType: 33,
-        },
-        RelativeHumidity: {
-          Minimum: 58,
-          Maximum: 73,
-          Average: 68,
-        },
-        WetBulbTemperature: {
-          Minimum: {
-            Value: 12.7,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Maximum: {
-            Value: 15.3,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Average: {
-            Value: 14,
-            Unit: "C",
-            UnitType: 17,
-          },
-        },
-        WetBulbGlobeTemperature: {
-          Minimum: {
-            Value: 15,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Maximum: {
-            Value: 18.6,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Average: {
-            Value: 16.6,
-            Unit: "C",
-            UnitType: 17,
-          },
-        },
-      },
-      Sources: ["AccuWeather"],
-      MobileLink:
-        "http://www.accuweather.com/en/gr/athens/182536/daily-weather-forecast/182536?day=4&unit=c&lang=en-us",
-      Link: "http://www.accuweather.com/en/gr/athens/182536/daily-weather-forecast/182536?day=4&unit=c&lang=en-us",
-    },
-    {
-      Date: "2024-05-03T07:00:00+03:00",
-      EpochDate: 1714708800,
-      Sun: {
-        Rise: "2024-05-03T06:26:00+03:00",
-        EpochRise: 1714706760,
-        Set: "2024-05-03T20:18:00+03:00",
-        EpochSet: 1714756680,
-      },
-      Moon: {
-        Rise: "2024-05-03T03:50:00+03:00",
-        EpochRise: 1714697400,
-        Set: "2024-05-03T14:54:00+03:00",
-        EpochSet: 1714737240,
-        Phase: "WaningCrescent",
-        Age: 25,
-      },
-      Temperature: {
-        Minimum: {
-          Value: 14.9,
-          Unit: "C",
-          UnitType: 17,
-        },
-        Maximum: {
-          Value: 26.6,
-          Unit: "C",
-          UnitType: 17,
-        },
-      },
-      RealFeelTemperature: {
-        Minimum: {
-          Value: 13.9,
-          Unit: "C",
-          UnitType: 17,
-          Phrase: "Cool",
-        },
-        Maximum: {
-          Value: 26.8,
-          Unit: "C",
-          UnitType: 17,
-          Phrase: "Very Warm",
-        },
-      },
-      RealFeelTemperatureShade: {
-        Minimum: {
-          Value: 13.9,
-          Unit: "C",
-          UnitType: 17,
-          Phrase: "Cool",
-        },
-        Maximum: {
-          Value: 24.1,
-          Unit: "C",
-          UnitType: 17,
-          Phrase: "Pleasant",
-        },
-      },
-      HoursOfSun: 13.4,
-      DegreeDaySummary: {
-        Heating: {
-          Value: 0,
-          Unit: "C",
-          UnitType: 17,
-        },
-        Cooling: {
-          Value: 3,
-          Unit: "C",
-          UnitType: 17,
-        },
-      },
-      AirAndPollen: [
-        {
-          Name: "AirQuality",
-          Value: 0,
-          Category: "Good",
-          CategoryValue: 1,
-          Type: "Ozone",
-        },
-        {
-          Name: "Grass",
-          Value: 139,
-          Category: "High",
-          CategoryValue: 3,
-        },
-        {
-          Name: "Mold",
-          Value: 32767,
-          Category: "High",
-          CategoryValue: 3,
-        },
-        {
-          Name: "Ragweed",
-          Value: 7,
-          Category: "Low",
-          CategoryValue: 1,
-        },
-        {
-          Name: "Tree",
-          Value: 2812,
-          Category: "Very High",
-          CategoryValue: 4,
-        },
-        {
-          Name: "UVIndex",
-          Value: 9,
-          Category: "Very High",
-          CategoryValue: 4,
-        },
-      ],
-      Day: {
-        Icon: 1,
-        IconPhrase: "Sunny",
-        HasPrecipitation: false,
-        ShortPhrase: "Sunny and increasingly windy",
-        LongPhrase: "Sunny and increasingly windy",
-        PrecipitationProbability: 0,
-        ThunderstormProbability: 0,
-        RainProbability: 0,
-        SnowProbability: 0,
-        IceProbability: 0,
-        Wind: {
-          Speed: {
-            Value: 25.9,
-            Unit: "km/h",
-            UnitType: 7,
-          },
-          Direction: {
-            Degrees: 279,
-            Localized: "W",
-            English: "W",
-          },
-        },
-        WindGust: {
-          Speed: {
-            Value: 51.9,
-            Unit: "km/h",
-            UnitType: 7,
-          },
-          Direction: {
-            Degrees: 279,
-            Localized: "W",
-            English: "W",
-          },
-        },
-        TotalLiquid: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        Rain: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        Snow: {
-          Value: 0,
-          Unit: "cm",
-          UnitType: 4,
-        },
-        Ice: {
-          Value: 0,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        HoursOfPrecipitation: 0,
-        HoursOfRain: 0,
-        HoursOfSnow: 0,
-        HoursOfIce: 0,
-        CloudCover: 3,
-        Evapotranspiration: {
-          Value: 6.1,
-          Unit: "mm",
-          UnitType: 3,
-        },
-        SolarIrradiance: {
-          Value: 8473.8,
-          Unit: "W/m²",
-          UnitType: 33,
-        },
-        RelativeHumidity: {
-          Minimum: 23,
-          Maximum: 62,
-          Average: 35,
-        },
-        WetBulbTemperature: {
-          Minimum: {
-            Value: 13.2,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Maximum: {
-            Value: 14.8,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Average: {
-            Value: 14.1,
-            Unit: "C",
-            UnitType: 17,
-          },
-        },
-        WetBulbGlobeTemperature: {
-          Minimum: {
-            Value: 16.7,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Maximum: {
-            Value: 20,
-            Unit: "C",
-            UnitType: 17,
-          },
-          Average: {
-            Value: 18.9,
-            Unit: "C",
-            UnitType: 17,
-          },
-        },
-      },
-      Night: {
-        Icon: 33,
-        IconPhrase: "Clear",
-        HasPrecipitation: false,
-        ShortPhrase: "Clear",
-        LongPhrase: "Clear",
-        PrecipitationProbability: 1,
-        ThunderstormProbability: 0,
-        RainProbability: 1,
-        SnowProbability: 0,
-        IceProbability: 0,
-        Wind: {
-          Speed: {
-            Value: 16.7,
-            Unit: "km/h",
-            UnitType: 7,
-          },
-          Direction: {
-            Degrees: 308,
-            Localized: "NW",
-            English: "NW",
-          },
-        },
-        WindGust: {
-          Speed: {
-            Value: 48.2,
-            Unit: "km/h",
-            UnitType: 7,
-          },
-          Direction: {
-            Degrees: 296,
-            Localized: "WNW",
-            English: "WNW",
+            Degrees: 18,
+            Localized: "NNE",
+            English: "NNE",
           },
         },
         TotalLiquid: {
@@ -3346,33 +2010,1035 @@ export const Weather = {
         HoursOfIce: 0,
         CloudCover: 0,
         Evapotranspiration: {
+          Value: 0.5,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        SolarIrradiance: {
+          Value: 177.7,
+          Unit: "W/m²",
+          UnitType: 33,
+        },
+        RelativeHumidity: {
+          Minimum: 52,
+          Maximum: 76,
+          Average: 67,
+        },
+        WetBulbTemperature: {
+          Minimum: {
+            Value: 11.7,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 14.9,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Average: {
+            Value: 13.1,
+            Unit: "C",
+            UnitType: 17,
+          },
+        },
+        WetBulbGlobeTemperature: {
+          Minimum: {
+            Value: 13.9,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 18.5,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Average: {
+            Value: 15.7,
+            Unit: "C",
+            UnitType: 17,
+          },
+        },
+      },
+      Sources: ["AccuWeather"],
+      MobileLink:
+        "http://www.accuweather.com/en/gr/athens/182536/daily-weather-forecast/182536?day=1&unit=c&lang=en-us",
+      Link: "http://www.accuweather.com/en/gr/athens/182536/daily-weather-forecast/182536?day=1&unit=c&lang=en-us",
+    },
+    {
+      Date: "2024-05-02T07:00:00+03:00",
+      EpochDate: 1714622400,
+      Sun: {
+        Rise: "2024-05-02T06:27:00+03:00",
+        EpochRise: 1714620420,
+        Set: "2024-05-02T20:17:00+03:00",
+        EpochSet: 1714670220,
+      },
+      Moon: {
+        Rise: "2024-05-02T03:19:00+03:00",
+        EpochRise: 1714609140,
+        Set: "2024-05-02T13:41:00+03:00",
+        EpochSet: 1714646460,
+        Phase: "WaningCrescent",
+        Age: 24,
+      },
+      Temperature: {
+        Minimum: {
+          Value: 14.8,
+          Unit: "C",
+          UnitType: 17,
+        },
+        Maximum: {
+          Value: 23.6,
+          Unit: "C",
+          UnitType: 17,
+        },
+      },
+      RealFeelTemperature: {
+        Minimum: {
+          Value: 13.3,
+          Unit: "C",
+          UnitType: 17,
+          Phrase: "Cool",
+        },
+        Maximum: {
+          Value: 25.9,
+          Unit: "C",
+          UnitType: 17,
+          Phrase: "Pleasant",
+        },
+      },
+      RealFeelTemperatureShade: {
+        Minimum: {
+          Value: 13.3,
+          Unit: "C",
+          UnitType: 17,
+          Phrase: "Cool",
+        },
+        Maximum: {
+          Value: 21.7,
+          Unit: "C",
+          UnitType: 17,
+          Phrase: "Pleasant",
+        },
+      },
+      HoursOfSun: 13,
+      DegreeDaySummary: {
+        Heating: {
+          Value: 0,
+          Unit: "C",
+          UnitType: 17,
+        },
+        Cooling: {
+          Value: 1,
+          Unit: "C",
+          UnitType: 17,
+        },
+      },
+      AirAndPollen: [
+        {
+          Name: "AirQuality",
+          Value: 0,
+          Category: "Good",
+          CategoryValue: 1,
+          Type: "Ozone",
+        },
+        {
+          Name: "Grass",
+          Value: 15,
+          Category: "Moderate",
+          CategoryValue: 2,
+        },
+        {
+          Name: "Mold",
+          Value: 32767,
+          Category: "High",
+          CategoryValue: 3,
+        },
+        {
+          Name: "Ragweed",
+          Value: 0,
+          Category: "Low",
+          CategoryValue: 1,
+        },
+        {
+          Name: "Tree",
+          Value: 146,
+          Category: "High",
+          CategoryValue: 3,
+        },
+        {
+          Name: "UVIndex",
+          Value: 9,
+          Category: "Very High",
+          CategoryValue: 4,
+        },
+      ],
+      Day: {
+        Icon: 1,
+        IconPhrase: "Sunny",
+        HasPrecipitation: false,
+        ShortPhrase: "Sunny and nice",
+        LongPhrase: "Sunny and nice",
+        PrecipitationProbability: 2,
+        ThunderstormProbability: 0,
+        RainProbability: 2,
+        SnowProbability: 0,
+        IceProbability: 0,
+        Wind: {
+          Speed: {
+            Value: 14.8,
+            Unit: "km/h",
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 247,
+            Localized: "WSW",
+            English: "WSW",
+          },
+        },
+        WindGust: {
+          Speed: {
+            Value: 33.3,
+            Unit: "km/h",
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 202,
+            Localized: "SSW",
+            English: "SSW",
+          },
+        },
+        TotalLiquid: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        Rain: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        Snow: {
+          Value: 0,
+          Unit: "cm",
+          UnitType: 4,
+        },
+        Ice: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        HoursOfPrecipitation: 0,
+        HoursOfRain: 0,
+        HoursOfSnow: 0,
+        HoursOfIce: 0,
+        CloudCover: 7,
+        Evapotranspiration: {
+          Value: 4.8,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        SolarIrradiance: {
+          Value: 8431.1,
+          Unit: "W/m²",
+          UnitType: 33,
+        },
+        RelativeHumidity: {
+          Minimum: 45,
+          Maximum: 65,
+          Average: 52,
+        },
+        WetBulbTemperature: {
+          Minimum: {
+            Value: 13.1,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 16,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Average: {
+            Value: 15.2,
+            Unit: "C",
+            UnitType: 17,
+          },
+        },
+        WetBulbGlobeTemperature: {
+          Minimum: {
+            Value: 16,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 20.2,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Average: {
+            Value: 18.9,
+            Unit: "C",
+            UnitType: 17,
+          },
+        },
+      },
+      Night: {
+        Icon: 33,
+        IconPhrase: "Clear",
+        HasPrecipitation: false,
+        ShortPhrase: "Clear",
+        LongPhrase: "Clear",
+        PrecipitationProbability: 0,
+        ThunderstormProbability: 0,
+        RainProbability: 0,
+        SnowProbability: 0,
+        IceProbability: 0,
+        Wind: {
+          Speed: {
+            Value: 11.1,
+            Unit: "km/h",
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 254,
+            Localized: "WSW",
+            English: "WSW",
+          },
+        },
+        WindGust: {
+          Speed: {
+            Value: 24.1,
+            Unit: "km/h",
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 200,
+            Localized: "SSW",
+            English: "SSW",
+          },
+        },
+        TotalLiquid: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        Rain: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        Snow: {
+          Value: 0,
+          Unit: "cm",
+          UnitType: 4,
+        },
+        Ice: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        HoursOfPrecipitation: 0,
+        HoursOfRain: 0,
+        HoursOfSnow: 0,
+        HoursOfIce: 0,
+        CloudCover: 0,
+        Evapotranspiration: {
+          Value: 0.5,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        SolarIrradiance: {
+          Value: 181.2,
+          Unit: "W/m²",
+          UnitType: 33,
+        },
+        RelativeHumidity: {
+          Minimum: 65,
+          Maximum: 77,
+          Average: 72,
+        },
+        WetBulbTemperature: {
+          Minimum: {
+            Value: 12.5,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 15.7,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Average: {
+            Value: 13.9,
+            Unit: "C",
+            UnitType: 17,
+          },
+        },
+        WetBulbGlobeTemperature: {
+          Minimum: {
+            Value: 14.6,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 18.3,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Average: {
+            Value: 16.2,
+            Unit: "C",
+            UnitType: 17,
+          },
+        },
+      },
+      Sources: ["AccuWeather"],
+      MobileLink:
+        "http://www.accuweather.com/en/gr/athens/182536/daily-weather-forecast/182536?day=2&unit=c&lang=en-us",
+      Link: "http://www.accuweather.com/en/gr/athens/182536/daily-weather-forecast/182536?day=2&unit=c&lang=en-us",
+    },
+    {
+      Date: "2024-05-03T07:00:00+03:00",
+      EpochDate: 1714708800,
+      Sun: {
+        Rise: "2024-05-03T06:26:00+03:00",
+        EpochRise: 1714706760,
+        Set: "2024-05-03T20:18:00+03:00",
+        EpochSet: 1714756680,
+      },
+      Moon: {
+        Rise: "2024-05-03T03:50:00+03:00",
+        EpochRise: 1714697400,
+        Set: "2024-05-03T14:54:00+03:00",
+        EpochSet: 1714737240,
+        Phase: "WaningCrescent",
+        Age: 25,
+      },
+      Temperature: {
+        Minimum: {
+          Value: 14.3,
+          Unit: "C",
+          UnitType: 17,
+        },
+        Maximum: {
+          Value: 24.9,
+          Unit: "C",
+          UnitType: 17,
+        },
+      },
+      RealFeelTemperature: {
+        Minimum: {
+          Value: 12.3,
+          Unit: "C",
+          UnitType: 17,
+          Phrase: "Cool",
+        },
+        Maximum: {
+          Value: 25.8,
+          Unit: "C",
+          UnitType: 17,
+          Phrase: "Pleasant",
+        },
+      },
+      RealFeelTemperatureShade: {
+        Minimum: {
+          Value: 12.3,
+          Unit: "C",
+          UnitType: 17,
+          Phrase: "Cool",
+        },
+        Maximum: {
+          Value: 22.6,
+          Unit: "C",
+          UnitType: 17,
+          Phrase: "Pleasant",
+        },
+      },
+      HoursOfSun: 13,
+      DegreeDaySummary: {
+        Heating: {
+          Value: 0,
+          Unit: "C",
+          UnitType: 17,
+        },
+        Cooling: {
+          Value: 2,
+          Unit: "C",
+          UnitType: 17,
+        },
+      },
+      AirAndPollen: [
+        {
+          Name: "AirQuality",
+          Value: 0,
+          Category: "Good",
+          CategoryValue: 1,
+          Type: "Ozone",
+        },
+        {
+          Name: "Grass",
+          Value: 56,
+          Category: "High",
+          CategoryValue: 3,
+        },
+        {
+          Name: "Mold",
+          Value: 32767,
+          Category: "High",
+          CategoryValue: 3,
+        },
+        {
+          Name: "Ragweed",
+          Value: 2,
+          Category: "Low",
+          CategoryValue: 1,
+        },
+        {
+          Name: "Tree",
+          Value: 1010,
+          Category: "High",
+          CategoryValue: 3,
+        },
+        {
+          Name: "UVIndex",
+          Value: 9,
+          Category: "Very High",
+          CategoryValue: 4,
+        },
+      ],
+      Day: {
+        Icon: 1,
+        IconPhrase: "Sunny",
+        HasPrecipitation: false,
+        ShortPhrase: "Sunny and increasingly windy",
+        LongPhrase: "Sunny and increasingly windy",
+        PrecipitationProbability: 0,
+        ThunderstormProbability: 0,
+        RainProbability: 0,
+        SnowProbability: 0,
+        IceProbability: 0,
+        Wind: {
+          Speed: {
+            Value: 24.1,
+            Unit: "km/h",
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 278,
+            Localized: "W",
+            English: "W",
+          },
+        },
+        WindGust: {
+          Speed: {
+            Value: 61.1,
+            Unit: "km/h",
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 289,
+            Localized: "WNW",
+            English: "WNW",
+          },
+        },
+        TotalLiquid: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        Rain: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        Snow: {
+          Value: 0,
+          Unit: "cm",
+          UnitType: 4,
+        },
+        Ice: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        HoursOfPrecipitation: 0,
+        HoursOfRain: 0,
+        HoursOfSnow: 0,
+        HoursOfIce: 0,
+        CloudCover: 4,
+        Evapotranspiration: {
+          Value: 5.8,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        SolarIrradiance: {
+          Value: 8473.3,
+          Unit: "W/m²",
+          UnitType: 33,
+        },
+        RelativeHumidity: {
+          Minimum: 23,
+          Maximum: 62,
+          Average: 36,
+        },
+        WetBulbTemperature: {
+          Minimum: {
+            Value: 11.3,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 14.6,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Average: {
+            Value: 13.4,
+            Unit: "C",
+            UnitType: 17,
+          },
+        },
+        WetBulbGlobeTemperature: {
+          Minimum: {
+            Value: 16.1,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 19.3,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Average: {
+            Value: 18.1,
+            Unit: "C",
+            UnitType: 17,
+          },
+        },
+      },
+      Night: {
+        Icon: 33,
+        IconPhrase: "Clear",
+        HasPrecipitation: false,
+        ShortPhrase: "Clear",
+        LongPhrase: "Clear",
+        PrecipitationProbability: 1,
+        ThunderstormProbability: 0,
+        RainProbability: 1,
+        SnowProbability: 0,
+        IceProbability: 0,
+        Wind: {
+          Speed: {
+            Value: 16.7,
+            Unit: "km/h",
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 297,
+            Localized: "WNW",
+            English: "WNW",
+          },
+        },
+        WindGust: {
+          Speed: {
+            Value: 51.9,
+            Unit: "km/h",
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 292,
+            Localized: "WNW",
+            English: "WNW",
+          },
+        },
+        TotalLiquid: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        Rain: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        Snow: {
+          Value: 0,
+          Unit: "cm",
+          UnitType: 4,
+        },
+        Ice: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        HoursOfPrecipitation: 0,
+        HoursOfRain: 0,
+        HoursOfSnow: 0,
+        HoursOfIce: 0,
+        CloudCover: 3,
+        Evapotranspiration: {
           Value: 1.3,
           Unit: "mm",
           UnitType: 3,
         },
         SolarIrradiance: {
-          Value: 184.5,
+          Value: 181.3,
           Unit: "W/m²",
           UnitType: 33,
         },
         RelativeHumidity: {
-          Minimum: 32,
-          Maximum: 53,
-          Average: 46,
+          Minimum: 29,
+          Maximum: 60,
+          Average: 49,
         },
         WetBulbTemperature: {
           Minimum: {
-            Value: 10,
+            Value: 10.3,
             Unit: "C",
             UnitType: 17,
           },
           Maximum: {
-            Value: 12.8,
+            Value: 11.4,
             Unit: "C",
             UnitType: 17,
           },
           Average: {
-            Value: 11.4,
+            Value: 10.8,
+            Unit: "C",
+            UnitType: 17,
+          },
+        },
+        WetBulbGlobeTemperature: {
+          Minimum: {
+            Value: 13,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 16.2,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Average: {
+            Value: 14.2,
+            Unit: "C",
+            UnitType: 17,
+          },
+        },
+      },
+      Sources: ["AccuWeather"],
+      MobileLink:
+        "http://www.accuweather.com/en/gr/athens/182536/daily-weather-forecast/182536?day=3&unit=c&lang=en-us",
+      Link: "http://www.accuweather.com/en/gr/athens/182536/daily-weather-forecast/182536?day=3&unit=c&lang=en-us",
+    },
+    {
+      Date: "2024-05-04T07:00:00+03:00",
+      EpochDate: 1714795200,
+      Sun: {
+        Rise: "2024-05-04T06:25:00+03:00",
+        EpochRise: 1714793100,
+        Set: "2024-05-04T20:19:00+03:00",
+        EpochSet: 1714843140,
+      },
+      Moon: {
+        Rise: "2024-05-04T04:18:00+03:00",
+        EpochRise: 1714785480,
+        Set: "2024-05-04T16:08:00+03:00",
+        EpochSet: 1714828080,
+        Phase: "WaningCrescent",
+        Age: 26,
+      },
+      Temperature: {
+        Minimum: {
+          Value: 13,
+          Unit: "C",
+          UnitType: 17,
+        },
+        Maximum: {
+          Value: 22.3,
+          Unit: "C",
+          UnitType: 17,
+        },
+      },
+      RealFeelTemperature: {
+        Minimum: {
+          Value: 12.1,
+          Unit: "C",
+          UnitType: 17,
+          Phrase: "Cool",
+        },
+        Maximum: {
+          Value: 21.5,
+          Unit: "C",
+          UnitType: 17,
+          Phrase: "Pleasant",
+        },
+      },
+      RealFeelTemperatureShade: {
+        Minimum: {
+          Value: 12.1,
+          Unit: "C",
+          UnitType: 17,
+          Phrase: "Cool",
+        },
+        Maximum: {
+          Value: 20.3,
+          Unit: "C",
+          UnitType: 17,
+          Phrase: "Pleasant",
+        },
+      },
+      HoursOfSun: 5.4,
+      DegreeDaySummary: {
+        Heating: {
+          Value: 0,
+          Unit: "C",
+          UnitType: 17,
+        },
+        Cooling: {
+          Value: 0,
+          Unit: "C",
+          UnitType: 17,
+        },
+      },
+      AirAndPollen: [
+        {
+          Name: "AirQuality",
+          Value: 0,
+          Category: "Good",
+          CategoryValue: 1,
+          Type: "Ozone",
+        },
+        {
+          Name: "Grass",
+          Value: 108,
+          Category: "High",
+          CategoryValue: 3,
+        },
+        {
+          Name: "Mold",
+          Value: 32767,
+          Category: "High",
+          CategoryValue: 3,
+        },
+        {
+          Name: "Ragweed",
+          Value: 5,
+          Category: "Low",
+          CategoryValue: 1,
+        },
+        {
+          Name: "Tree",
+          Value: 2119,
+          Category: "Very High",
+          CategoryValue: 4,
+        },
+        {
+          Name: "UVIndex",
+          Value: 3,
+          Category: "Moderate",
+          CategoryValue: 2,
+        },
+      ],
+      Day: {
+        Icon: 3,
+        IconPhrase: "Partly sunny",
+        HasPrecipitation: false,
+        ShortPhrase: "Some sun; breezy in the p.m.",
+        LongPhrase: "Pleasant with partial sunshine; breezy in the afternoon",
+        PrecipitationProbability: 16,
+        ThunderstormProbability: 0,
+        RainProbability: 16,
+        SnowProbability: 0,
+        IceProbability: 0,
+        Wind: {
+          Speed: {
+            Value: 20.4,
+            Unit: "km/h",
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 298,
+            Localized: "WNW",
+            English: "WNW",
+          },
+        },
+        WindGust: {
+          Speed: {
+            Value: 44.4,
+            Unit: "km/h",
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 305,
+            Localized: "NW",
+            English: "NW",
+          },
+        },
+        TotalLiquid: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        Rain: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        Snow: {
+          Value: 0,
+          Unit: "cm",
+          UnitType: 4,
+        },
+        Ice: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        HoursOfPrecipitation: 0,
+        HoursOfRain: 0,
+        HoursOfSnow: 0,
+        HoursOfIce: 0,
+        CloudCover: 70,
+        Evapotranspiration: {
+          Value: 3.8,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        SolarIrradiance: {
+          Value: 3786.7,
+          Unit: "W/m²",
+          UnitType: 33,
+        },
+        RelativeHumidity: {
+          Minimum: 34,
+          Maximum: 53,
+          Average: 40,
+        },
+        WetBulbTemperature: {
+          Minimum: {
+            Value: 11.1,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 13.3,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Average: {
+            Value: 12.4,
+            Unit: "C",
+            UnitType: 17,
+          },
+        },
+        WetBulbGlobeTemperature: {
+          Minimum: {
+            Value: 14.2,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 17.5,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Average: {
+            Value: 16.2,
+            Unit: "C",
+            UnitType: 17,
+          },
+        },
+      },
+      Night: {
+        Icon: 34,
+        IconPhrase: "Mostly clear",
+        HasPrecipitation: false,
+        ShortPhrase: "Mainly clear",
+        LongPhrase: "Mainly clear",
+        PrecipitationProbability: 2,
+        ThunderstormProbability: 0,
+        RainProbability: 2,
+        SnowProbability: 0,
+        IceProbability: 0,
+        Wind: {
+          Speed: {
+            Value: 9.3,
+            Unit: "km/h",
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 356,
+            Localized: "N",
+            English: "N",
+          },
+        },
+        WindGust: {
+          Speed: {
+            Value: 31.5,
+            Unit: "km/h",
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 341,
+            Localized: "NNW",
+            English: "NNW",
+          },
+        },
+        TotalLiquid: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        Rain: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        Snow: {
+          Value: 0,
+          Unit: "cm",
+          UnitType: 4,
+        },
+        Ice: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        HoursOfPrecipitation: 0,
+        HoursOfRain: 0,
+        HoursOfSnow: 0,
+        HoursOfIce: 0,
+        CloudCover: 15,
+        Evapotranspiration: {
+          Value: 0.5,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        SolarIrradiance: {
+          Value: 187.8,
+          Unit: "W/m²",
+          UnitType: 33,
+        },
+        RelativeHumidity: {
+          Minimum: 50,
+          Maximum: 76,
+          Average: 65,
+        },
+        WetBulbTemperature: {
+          Minimum: {
+            Value: 11,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 12.5,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Average: {
+            Value: 11.8,
             Unit: "C",
             UnitType: 17,
           },
@@ -3384,12 +3050,349 @@ export const Weather = {
             UnitType: 17,
           },
           Maximum: {
-            Value: 17.6,
+            Value: 16.1,
             Unit: "C",
             UnitType: 17,
           },
           Average: {
-            Value: 15.2,
+            Value: 14.6,
+            Unit: "C",
+            UnitType: 17,
+          },
+        },
+      },
+      Sources: ["AccuWeather"],
+      MobileLink:
+        "http://www.accuweather.com/en/gr/athens/182536/daily-weather-forecast/182536?day=4&unit=c&lang=en-us",
+      Link: "http://www.accuweather.com/en/gr/athens/182536/daily-weather-forecast/182536?day=4&unit=c&lang=en-us",
+    },
+    {
+      Date: "2024-05-05T07:00:00+03:00",
+      EpochDate: 1714881600,
+      Sun: {
+        Rise: "2024-05-05T06:24:00+03:00",
+        EpochRise: 1714879440,
+        Set: "2024-05-05T20:20:00+03:00",
+        EpochSet: 1714929600,
+      },
+      Moon: {
+        Rise: "2024-05-05T04:44:00+03:00",
+        EpochRise: 1714873440,
+        Set: "2024-05-05T17:21:00+03:00",
+        EpochSet: 1714918860,
+        Phase: "WaningCrescent",
+        Age: 27,
+      },
+      Temperature: {
+        Minimum: {
+          Value: 13.1,
+          Unit: "C",
+          UnitType: 17,
+        },
+        Maximum: {
+          Value: 23.7,
+          Unit: "C",
+          UnitType: 17,
+        },
+      },
+      RealFeelTemperature: {
+        Minimum: {
+          Value: 13.2,
+          Unit: "C",
+          UnitType: 17,
+          Phrase: "Cool",
+        },
+        Maximum: {
+          Value: 26.5,
+          Unit: "C",
+          UnitType: 17,
+          Phrase: "Very Warm",
+        },
+      },
+      RealFeelTemperatureShade: {
+        Minimum: {
+          Value: 13.2,
+          Unit: "C",
+          UnitType: 17,
+          Phrase: "Cool",
+        },
+        Maximum: {
+          Value: 21.9,
+          Unit: "C",
+          UnitType: 17,
+          Phrase: "Pleasant",
+        },
+      },
+      HoursOfSun: 10.4,
+      DegreeDaySummary: {
+        Heating: {
+          Value: 0,
+          Unit: "C",
+          UnitType: 17,
+        },
+        Cooling: {
+          Value: 0,
+          Unit: "C",
+          UnitType: 17,
+        },
+      },
+      AirAndPollen: [
+        {
+          Name: "AirQuality",
+          Value: 0,
+          Category: "Good",
+          CategoryValue: 1,
+          Type: "Ozone",
+        },
+        {
+          Name: "Grass",
+          Value: 114,
+          Category: "High",
+          CategoryValue: 3,
+        },
+        {
+          Name: "Mold",
+          Value: 32767,
+          Category: "High",
+          CategoryValue: 3,
+        },
+        {
+          Name: "Ragweed",
+          Value: 5,
+          Category: "Low",
+          CategoryValue: 1,
+        },
+        {
+          Name: "Tree",
+          Value: 2294,
+          Category: "Very High",
+          CategoryValue: 4,
+        },
+        {
+          Name: "UVIndex",
+          Value: 10,
+          Category: "Very High",
+          CategoryValue: 4,
+        },
+      ],
+      Day: {
+        Icon: 2,
+        IconPhrase: "Mostly sunny",
+        HasPrecipitation: true,
+        PrecipitationType: "Rain",
+        PrecipitationIntensity: "Light",
+        ShortPhrase: "A passing morning shower",
+        LongPhrase:
+          "A passing shower in the morning; otherwise, sunshine and patchy clouds",
+        PrecipitationProbability: 57,
+        ThunderstormProbability: 11,
+        RainProbability: 57,
+        SnowProbability: 0,
+        IceProbability: 0,
+        Wind: {
+          Speed: {
+            Value: 13,
+            Unit: "km/h",
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 230,
+            Localized: "SW",
+            English: "SW",
+          },
+        },
+        WindGust: {
+          Speed: {
+            Value: 33.3,
+            Unit: "km/h",
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 200,
+            Localized: "SSW",
+            English: "SSW",
+          },
+        },
+        TotalLiquid: {
+          Value: 0.8,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        Rain: {
+          Value: 0.8,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        Snow: {
+          Value: 0,
+          Unit: "cm",
+          UnitType: 4,
+        },
+        Ice: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        HoursOfPrecipitation: 0.5,
+        HoursOfRain: 0.5,
+        HoursOfSnow: 0,
+        HoursOfIce: 0,
+        CloudCover: 29,
+        Evapotranspiration: {
+          Value: 4.3,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        SolarIrradiance: {
+          Value: 8002.8,
+          Unit: "W/m²",
+          UnitType: 33,
+        },
+        RelativeHumidity: {
+          Minimum: 34,
+          Maximum: 62,
+          Average: 43,
+        },
+        WetBulbTemperature: {
+          Minimum: {
+            Value: 12,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 14.3,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Average: {
+            Value: 13.7,
+            Unit: "C",
+            UnitType: 17,
+          },
+        },
+        WetBulbGlobeTemperature: {
+          Minimum: {
+            Value: 15.3,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 19.5,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Average: {
+            Value: 18.1,
+            Unit: "C",
+            UnitType: 17,
+          },
+        },
+      },
+      Night: {
+        Icon: 34,
+        IconPhrase: "Mostly clear",
+        HasPrecipitation: false,
+        ShortPhrase: "Clear to partly cloudy",
+        LongPhrase: "Clear to partly cloudy",
+        PrecipitationProbability: 3,
+        ThunderstormProbability: 0,
+        RainProbability: 3,
+        SnowProbability: 0,
+        IceProbability: 0,
+        Wind: {
+          Speed: {
+            Value: 7.4,
+            Unit: "km/h",
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 35,
+            Localized: "NE",
+            English: "NE",
+          },
+        },
+        WindGust: {
+          Speed: {
+            Value: 18.5,
+            Unit: "km/h",
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 173,
+            Localized: "S",
+            English: "S",
+          },
+        },
+        TotalLiquid: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        Rain: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        Snow: {
+          Value: 0,
+          Unit: "cm",
+          UnitType: 4,
+        },
+        Ice: {
+          Value: 0,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        HoursOfPrecipitation: 0,
+        HoursOfRain: 0,
+        HoursOfSnow: 0,
+        HoursOfIce: 0,
+        CloudCover: 12,
+        Evapotranspiration: {
+          Value: 0.3,
+          Unit: "mm",
+          UnitType: 3,
+        },
+        SolarIrradiance: {
+          Value: 191,
+          Unit: "W/m²",
+          UnitType: 33,
+        },
+        RelativeHumidity: {
+          Minimum: 46,
+          Maximum: 69,
+          Average: 60,
+        },
+        WetBulbTemperature: {
+          Minimum: {
+            Value: 10.2,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 13.2,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Average: {
+            Value: 11.3,
+            Unit: "C",
+            UnitType: 17,
+          },
+        },
+        WetBulbGlobeTemperature: {
+          Minimum: {
+            Value: 13,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 17.2,
+            Unit: "C",
+            UnitType: 17,
+          },
+          Average: {
+            Value: 14.6,
             Unit: "C",
             UnitType: 17,
           },

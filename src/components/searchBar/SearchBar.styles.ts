@@ -10,7 +10,9 @@ export const SearchBarContainer = styled.form`
 
 export const SearchWrapper = styled.div`
   position: relative;
-  width: inherit;
+  flex: 1;
+  width: 100%;
+  max-width: 25rem;
 `;
 
 export const Input = styled.input`
@@ -22,7 +24,7 @@ export const Input = styled.input`
   box-shadow: inset 0 4px 4px ${colors.boxShadow};
   border-radius: 0.7rem;
   border-style: none;
-  min-width: 17rem;
+  width: 100%;
   padding: 0.5rem 2.4rem 0.5rem 2.4rem;
   color: ${colors.lightText1};
   font-family: inherit;
@@ -43,8 +45,6 @@ export const StyledUl = styled.ul`
   background-color: ${colors.white};
   list-style: none;
   border-radius: 0.3rem;
-  position: absolute;
-  z-index: 1;
   width: 98%;
   padding: 0.2rem;
   margin-top: 0.5rem;

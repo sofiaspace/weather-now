@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../../styles/mediaBreakpoints";
 
 interface Color {
   color: string;
@@ -16,4 +17,8 @@ export const StyledImage = styled.img<Color>`
   width: 1.2rem;
 
   ${({ color }) => handleColor(color)};
+
+  @media ${device.sm} {
+    padding-right: 0.1rem;
+  }
 `;
