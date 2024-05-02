@@ -34,7 +34,7 @@ export const WeatherProvider: FC<PropsWithChildren> = ({ children }) => {
         );
 
         const data = await res.json();
-        console.log(data);
+
         dispatch({
           type: "fetchData",
           payload: data.map((city: WeatherData) => ({

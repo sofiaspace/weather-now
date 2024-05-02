@@ -1,11 +1,16 @@
 import styled from "styled-components";
 import { colors } from "../../styles/variables";
+import { device } from "../../styles/mediaBreakpoints";
 
 export const SearchBarContainer = styled.form`
   display: flex;
   justify-content: center;
   position: relative;
   margin-top: 6rem;
+
+  @media ${device.lg} {
+    margin-top: 4rem;
+  }
 `;
 
 export const SearchWrapper = styled.div`
@@ -48,6 +53,7 @@ export const StyledUl = styled.ul`
   width: 98%;
   padding: 0.2rem;
   margin-top: 0.5rem;
+  position: absolute;
 `;
 
 export const StyledList = styled.li`

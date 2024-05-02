@@ -1,7 +1,10 @@
-import { FC } from "react";
+import { FC, PropsWithChildren } from "react";
+import { MessageContainer } from "./ErrorMessage.styles";
 
-const ErrorMessage: FC = () => {
-  return <div>Can't find day</div>;
+interface ErrorMessageProps extends PropsWithChildren {}
+
+const ErrorMessage: FC<ErrorMessageProps> = ({ children }) => {
+  return <MessageContainer>{children}</MessageContainer>;
 };
 
 export default ErrorMessage;

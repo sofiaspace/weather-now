@@ -1,9 +1,15 @@
 import styled from "styled-components";
+import { device } from "../../styles/mediaBreakpoints";
 
 export const DisplayDaysContainer = styled.div`
   display: flex;
   gap: 0.5rem;
   margin-top: 3rem;
+
+  @media ${device.sm} {
+    display: block;
+    gap: 0;
+  }
 `;
 
 export const DaysContainer = styled.div`
@@ -14,5 +20,17 @@ export const DaysContainer = styled.div`
   &:hover {
     transform: translateY(-1rem);
     cursor: pointer;
+
+    @media ${device.sm} {
+      transform: translateY(-0.5rem);
+    }
+  }
+
+  @media ${device.sm} {
+    width: fit-content;
+    margin: 1rem auto;
+    &:nth-child(5) {
+      margin-bottom: 0;
+    }
   }
 `;

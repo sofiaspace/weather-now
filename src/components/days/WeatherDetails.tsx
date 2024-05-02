@@ -13,12 +13,12 @@ import { Forecast } from "../../interface/forecast";
 
 interface WeatherDetailsProps extends Forecast {}
 
-const WeatherDetails: FC<WeatherDetailsProps> = ({ dailyForecast }) => {
+const WeatherDetails: FC<WeatherDetailsProps> = ({ DailyForecast }) => {
   return (
     <DayContainer>
       <DateContainer>
         <Text variant="body2" color="white">
-          {dateConverter(dailyForecast.Date)}
+          {dateConverter(DailyForecast.Date)}
         </Text>
         <AirQualityContainer>
           <StyledDiv>
@@ -26,19 +26,19 @@ const WeatherDetails: FC<WeatherDetailsProps> = ({ dailyForecast }) => {
               AIR QUALITY
             </Text>
             <Text variant="body3" color="white">
-              {dailyForecast.AirAndPollen[0].Category}
+              {DailyForecast.AirAndPollen[0].Category}
             </Text>
           </StyledDiv>
-          <AirQualityBar dailyForecast={dailyForecast} />
+          <AirQualityBar DailyForecast={DailyForecast} />
         </AirQualityContainer>
       </DateContainer>
 
       <TemperatureContainer>
         <Text variant="body3" color="lightText1">
-          {dailyForecast.Day.IconPhrase}
+          {DailyForecast.Day.IconPhrase}
         </Text>
         <Text variant="body1" color="white">
-          {Math.round(dailyForecast.Temperature.Maximum.Value)}º
+          {Math.round(DailyForecast.Temperature.Maximum.Value)}º
         </Text>
       </TemperatureContainer>
     </DayContainer>

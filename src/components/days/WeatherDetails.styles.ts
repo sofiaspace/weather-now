@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../styles/variables";
+import { device } from "../../styles/mediaBreakpoints";
 
 export const DayContainer = styled.div`
   background: linear-gradient(
@@ -15,6 +16,17 @@ export const DayContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: end;
+
+  @media ${device.sm} {
+    clip-path: none;
+    min-height: unset;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.5rem 0 0 7rem;
+  }
+  @media ${device.xs} {
+    padding-left: 5.5rem;
+  }
 `;
 
 export const DateContainer = styled.div`
@@ -24,6 +36,10 @@ export const DateContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  @media ${device.sm} {
+    padding-bottom: unset;
+  }
 `;
 
 export const AirQualityContainer = styled.div`
@@ -31,6 +47,10 @@ export const AirQualityContainer = styled.div`
   border-radius: 0.5rem;
   margin: 0 0.5rem;
   background-color: ${colors.lightBlue1};
+
+  @media ${device.sm} {
+    margin: 0;
+  }
 `;
 
 export const TemperatureContainer = styled.div`
@@ -39,6 +59,11 @@ export const TemperatureContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: end;
+
+  @media ${device.sm} {
+    align-items: center;
+    padding-top: 0.2rem;
+  }
 `;
 
 export const StyledDiv = styled.div`

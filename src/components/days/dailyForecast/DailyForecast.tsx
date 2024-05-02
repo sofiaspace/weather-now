@@ -19,19 +19,21 @@ import {
   dateConverter,
   dayConverter,
 } from "../../ui/dateConverter/DateConverter";
+import useFetch from "../../../hooks/useFetch";
 
 interface DailyForecastProps {}
 
 const DailyForecast: FC<DailyForecastProps> = ({}) => {
-  const { dayId } = useParams();
-  if (dayId === undefined) {
-    return <ErrorMessage />;
+  const { dayId, cityId } = useParams();
+  const { weather } = useFetch(cityId);
+  if (dayId === undefined || weather === undefined) {
+    return <ErrorMessage>Can't find day</ErrorMessage>;
   }
   const dayNumber = parseInt(dayId);
   const day = Weather.DailyForecasts[dayNumber];
 
   if (day === undefined) {
-    return <ErrorMessage />;
+    return <ErrorMessage>Can't find day</ErrorMessage>;
   }
 
   return (

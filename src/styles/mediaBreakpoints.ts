@@ -8,10 +8,10 @@ interface Size {
 }
 
 const size: Size = {
-  xs: "400px",
-  sm: "600px",
-  md: "950px",
-  lg: "1200px",
+  xs: "375px",
+  sm: "768px",
+  md: "1024px",
+  lg: "1280px",
   xl: "1440px",
   xxl: "1920px",
 };

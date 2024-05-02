@@ -42,13 +42,13 @@ font-family: "Poppins", sans-serif;
       margin: 0 5rem;
     }
     @media ${device.md}{
-      margin: 0 2rem;
-      overflow: scroll;
+      margin: 0 3rem;
       display: block;
-      height: 90%;
+      
     }
     @media ${device.sm}{
       margin: 0 .5rem;
       height: 95%;
+      overflow: auto;
     }
 }`;

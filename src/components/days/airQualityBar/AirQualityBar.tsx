@@ -4,7 +4,7 @@ import { Forecast } from "../../../interface/forecast";
 
 interface AirQualityBarProps extends Forecast {}
 
-const AirQualityBar: FC<AirQualityBarProps> = ({ dailyForecast }) => {
+const AirQualityBar: FC<AirQualityBarProps> = ({ DailyForecast }) => {
   return (
     <BarContainer>
       <Input
@@ -12,7 +12,7 @@ const AirQualityBar: FC<AirQualityBarProps> = ({ dailyForecast }) => {
         min="0"
         max="5"
         step="1"
-        value={dailyForecast.AirAndPollen[0].Value}
+        value={DailyForecast.AirAndPollen[0].Value}
         readOnly={true}
       />
     </BarContainer>

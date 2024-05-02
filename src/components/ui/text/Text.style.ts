@@ -12,6 +12,10 @@ export const TextContainer = styled.span<{
       case "body3":
         return css`
           font-size: 0.6rem;
+
+          @media ${device.sm} {
+            text-wrap: nowrap;
+          }
         `;
 
       case "body1":
@@ -28,9 +32,6 @@ export const TextContainer = styled.span<{
         return css`
           font-size: 6rem;
 
-          @media ${device.xl} {
-            font-size: 5rem;
-          }
           @media ${device.md} {
             font-size: 4rem;
           }

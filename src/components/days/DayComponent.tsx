@@ -8,11 +8,11 @@ interface DayComponentProps extends Forecast {
   onClick: () => void;
 }
 
-const DayComponent: FC<DayComponentProps> = ({ onClick, dailyForecast }) => {
+const DayComponent: FC<DayComponentProps> = ({ onClick, DailyForecast }) => {
   return (
     <DaysContainer onClick={onClick}>
-      <WeatherImg dailyForecast={dailyForecast} />
-      <WeatherDetails dailyForecast={dailyForecast} />
+      <WeatherImg DailyForecast={DailyForecast} />
+      <WeatherDetails DailyForecast={DailyForecast} />
     </DaysContainer>
   );
 };

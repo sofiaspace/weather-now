@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../../styles/mediaBreakpoints";
 
 interface StyleProps {
   $icon: string;
@@ -15,4 +16,9 @@ export const ImageContainer = styled.div<StyleProps>`
   background-position-y: center;
   background-position-x: center;
   z-index: 1;
+
+  @media ${device.sm} {
+    background-position-x: -1rem;
+    width: 40%;
+  }
 `;
