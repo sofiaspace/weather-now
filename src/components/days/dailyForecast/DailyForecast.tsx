@@ -9,7 +9,7 @@ import {
   Title,
 } from "./DailyForecast.styles";
 import { useParams } from "react-router-dom";
-import { Weather, smallIcons } from "../../../styles/variables";
+import { smallIcons } from "../../../styles/variables";
 import { timeConverter } from "../../ui/dateConverter/timeConverter";
 import { Input } from "../airQualityBar/AirQualityBar.style";
 import { StyledImage } from "../../ui/pngIcon/pngIcon.styles";
@@ -21,16 +21,15 @@ import {
 } from "../../ui/dateConverter/DateConverter";
 import useFetch from "../../../hooks/useFetch";
 
-interface DailyForecastProps {}
+const DailyForecast: FC = () => {
+  const { dayId, cityid } = useParams();
+  const { weather } = useFetch(cityid);
 
-const DailyForecast: FC<DailyForecastProps> = ({}) => {
-  const { dayId, cityId } = useParams();
-  const { weather } = useFetch(cityId);
   if (dayId === undefined || weather === undefined) {
     return <ErrorMessage>Can't find day</ErrorMessage>;
   }
   const dayNumber = parseInt(dayId);
-  const day = Weather.DailyForecasts[dayNumber];
+  const day = weather.DailyForecasts[dayNumber];
 
   if (day === undefined) {
     return <ErrorMessage>Can't find day</ErrorMessage>;

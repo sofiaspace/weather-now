@@ -19,21 +19,15 @@ font-family: "Poppins", sans-serif;
 }
 
 #root{
-  background: linear-gradient(
-    to right bottom,
-    ${colors.darkerBlue1},
-    ${colors.darkerBlue2}
-  );
-  border-radius: 2rem;
   width:inherit;
-  height: 80%;
+  height: 100%;
   margin: 0 8rem;
 
   display: flex;
   align-items: center;
 
   overflow: hidden;
-    flex: 1;
+    /* flex: 1; */
 
     @media ${device.xl}{
       margin: 0 6rem;
@@ -42,13 +36,11 @@ font-family: "Poppins", sans-serif;
       margin: 0 5rem;
     }
     @media ${device.md}{
-      margin: 0 3rem;
-      display: block;
-      
+      margin: 0 3rem; 
     }
     @media ${device.sm}{
-      margin: 0 .5rem;
-      height: 95%;
+      margin: auto;
+      align-items: unset;
       overflow: auto;
     }
 }`;

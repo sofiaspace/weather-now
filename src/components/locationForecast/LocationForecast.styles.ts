@@ -2,13 +2,14 @@ import styled from "styled-components";
 import { device } from "../../styles/mediaBreakpoints";
 
 export const LocationForecastContainer = styled.div`
-  margin-top: 6rem;
-
   display: flex;
   flex-direction: column;
+  flex: 1;
+  justify-content: flex-end;
 
   @media ${device.sm} {
     margin-top: 1rem;
+    justify-content: center;
   }
 `;
 

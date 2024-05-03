@@ -19,6 +19,6 @@ export const ImageContainer = styled.div<StyleProps>`
 
   @media ${device.sm} {
     background-position-x: -1rem;
-    width: 40%;
+    width: 35%;
   }
 `;

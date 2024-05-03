@@ -6,7 +6,7 @@ export const SearchBarContainer = styled.form`
   display: flex;
   justify-content: center;
   position: relative;
-  margin-top: 6rem;
+  padding-bottom: 3rem;
 
   @media ${device.lg} {
     margin-top: 4rem;

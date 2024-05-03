@@ -10,9 +10,7 @@ import { useNavigate } from "react-router-dom";
 import { smallIcons } from "../../styles/variables";
 import { StyledImage } from "../ui/pngIcon/pngIcon.styles";
 
-interface LocationForecastProps {}
-
-const LocationForecast: FC<LocationForecastProps> = ({}) => {
+const LocationForecast: FC = () => {
   const { state } = useWeatherContext();
   const navigate = useNavigate();
 

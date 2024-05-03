@@ -6,14 +6,19 @@ export const DisplayDaysContainer = styled.div`
   gap: 0.5rem;
   margin-top: 3rem;
 
+  @media ${device.md} {
+    gap: 0.3rem;
+  }
   @media ${device.sm} {
-    display: block;
-    gap: 0;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 0.6rem;
   }
 `;
 
 export const DaysContainer = styled.div`
   position: relative;
+  display: flex;
   flex: 1;
   transition: all 1s;
 
@@ -27,8 +32,7 @@ export const DaysContainer = styled.div`
   }
 
   @media ${device.sm} {
-    width: fit-content;
-    margin: 1rem auto;
+    margin: 0;
     &:nth-child(5) {
       margin-bottom: 0;
     }

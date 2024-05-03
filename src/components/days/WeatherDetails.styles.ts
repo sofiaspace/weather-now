@@ -11,17 +11,17 @@ export const DayContainer = styled.div`
   clip-path: polygon(0 4%, 0 100%, 100% 100%, 100% 35%);
 
   border-radius: 1rem;
-  min-height: 20rem;
+  padding-top: 7rem;
 
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: space-evenly;
+  flex: auto;
 
   @media ${device.sm} {
     clip-path: none;
     min-height: unset;
     flex-direction: row;
-    justify-content: space-around;
     padding: 0.5rem 0 0 7rem;
   }
   @media ${device.xs} {

@@ -12,6 +12,7 @@ const DisplayDays: FC<DisplayDaysProps> = ({}) => {
   const navigate = useNavigate();
   const { cityid } = useParams();
   const { weather } = useFetch(cityid);
+  console.log(weather);
 
   if (weather === undefined)
     return <ErrorMessage>Can't find forecast</ErrorMessage>;

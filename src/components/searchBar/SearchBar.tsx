@@ -10,9 +10,7 @@ import SearchSvg from "../ui/svgIcon/SearchSvg";
 import useWeatherContext from "../../hooks/useWeatherContext";
 import { NavLink } from "react-router-dom";
 
-export interface SearchBarProps {}
-
-const SearchBar: FC<SearchBarProps> = ({}) => {
+const SearchBar: FC = () => {
   const { state, dispatch } = useWeatherContext();
 
   const ref = useRef<HTMLDivElement>(null);
