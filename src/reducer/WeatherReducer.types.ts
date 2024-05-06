@@ -18,11 +18,14 @@ export interface WeatherState {
   fetchedData: WeatherData[] | undefined;
   isOpen: boolean;
   isSearched: boolean;
+  isLoading: boolean;
 }
 
 export type WeatherAction =
   | { type: "setLocation"; payload: string }
   | { type: "submitSearch" }
+  | { type: "loading" }
+  | { type: "stopLoading" }
   | { type: "fetchData"; payload: WeatherData[] | undefined }
   | { type: "openAutosearch" }
   | { type: "closeAutosearch" };

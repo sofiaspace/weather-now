@@ -15,6 +15,7 @@ export const Input = styled.input`
     ${colors.lightViolet2}
   );
   -webkit-appearance: none;
+  appearance: none;
 
   &::-webkit-slider-thumb {
     -webkit-appearance: none;

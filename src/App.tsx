@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DailyForecast from "./components/days/dailyForecast/DailyForecast";
 import Logo from "./components/logo/Logo";
 import LocationForecast from "./components/locationForecast/LocationForecast";
-import MainPage from "./components/days/mainPage/MainPage";
+import MainPage from "./components/mainPage/MainPage";
 
 function App() {
   return (

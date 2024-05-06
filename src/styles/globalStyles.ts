@@ -27,7 +27,6 @@ font-family: "Poppins", sans-serif;
   align-items: center;
 
   overflow: hidden;
-    /* flex: 1; */
 
     @media ${device.xl}{
       margin: 0 6rem;

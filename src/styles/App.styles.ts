@@ -9,9 +9,8 @@ export const AppContainer = styled.div`
     ${colors.darkerBlue2}
   );
   border-radius: 2rem;
-  min-height: 80%;
   padding: 2rem;
-  flex: 1;
+  min-height: 80%;
 
   display: flex;
   flex-direction: column;

@@ -1,15 +1,13 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { LogoContainer } from "./Logo.styles";
-import { Text } from "../ui/text/Text";
+import { Header } from "../ui/header/Header";
 
-interface LogoProps {}
-
-const Logo: FC<LogoProps> = ({}) => {
+const Logo: FC = () => {
   return (
     <LogoContainer>
-      <Text variant="headline" color="lightText1">
+      <Header variant="h1" color="lightText1">
         WeatherNow
-      </Text>
+      </Header>
     </LogoContainer>
   );
 };

@@ -13,9 +13,6 @@ export const LogoContainer = styled.div`
   }
   @media ${device.md} {
     padding-left: 0;
-  }
-
-  @media ${device.sm} {
-    align-self: center;
+    text-align: center;
   }
 `;

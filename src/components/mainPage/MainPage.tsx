@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import SearchBar from "../../searchBar/SearchBar";
+import SearchBar from "../searchBar/SearchBar";
 import DescriptionComponent from "./DescriptionComponent";
 import { MainPageContainer } from "./MainPage.style";
 

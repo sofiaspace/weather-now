@@ -9,6 +9,7 @@ import DisplayDays from "../days/DisplayDays";
 import { useNavigate } from "react-router-dom";
 import { smallIcons } from "../../styles/variables";
 import { StyledImage } from "../ui/pngIcon/pngIcon.styles";
+import Loading from "../ui/loadingMessage/Loading";
 
 const LocationForecast: FC = () => {
   const { state } = useWeatherContext();
@@ -19,6 +20,8 @@ const LocationForecast: FC = () => {
       navigate("/");
     }
   }, [state.location, navigate]);
+
+  if (state.isLoading === true) return <Loading />;
 
   return (
     <LocationForecastContainer>

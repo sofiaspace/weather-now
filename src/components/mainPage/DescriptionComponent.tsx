@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Text } from "../../ui/text/Text";
+import { Text } from "../ui/text/Text";
 import { DescriptionWrapper } from "./MainPage.style";
 
 const DescriptionComponent: FC = () => {

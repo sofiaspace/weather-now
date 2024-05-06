@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import {
   AirQualityContainer,
   DateContainer,
@@ -22,10 +22,10 @@ const WeatherDetails: FC<WeatherDetailsProps> = ({ DailyForecast }) => {
         </Text>
         <AirQualityContainer>
           <StyledDiv>
-            <Text variant="body3" color="white">
+            <Text variant="body4" color="white">
               AIR QUALITY
             </Text>
-            <Text variant="body3" color="white">
+            <Text variant="body4" color="white">
               {DailyForecast.AirAndPollen[0].Category}
             </Text>
           </StyledDiv>
@@ -34,7 +34,7 @@ const WeatherDetails: FC<WeatherDetailsProps> = ({ DailyForecast }) => {
       </DateContainer>
 
       <TemperatureContainer>
-        <Text variant="body3" color="lightText1">
+        <Text variant="body4" color="lightText1">
           {DailyForecast.Day.IconPhrase}
         </Text>
         <Text variant="body1" color="white">

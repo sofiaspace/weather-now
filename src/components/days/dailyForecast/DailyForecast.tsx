@@ -20,6 +20,7 @@ import {
   dayConverter,
 } from "../../ui/dateConverter/DateConverter";
 import useFetch from "../../../hooks/useFetch";
+import { Header } from "../../ui/header/Header";
 
 const DailyForecast: FC = () => {
   const { dayId, cityid } = useParams();
@@ -50,11 +51,16 @@ const DailyForecast: FC = () => {
               alt="sunrise"
               color="white"
             />
-            Sunrise
+            <Header variant="h3" color="white">
+              Sunrise
+            </Header>
           </Title>
-          <div>
-            <Details>{timeConverter(day.Sun.Rise)}</Details>
-          </div>
+
+          <Details>
+            <Text variant="body3" color="lightText1">
+              {timeConverter(day.Sun.Rise)}
+            </Text>
+          </Details>
         </StyledContainer>
 
         <StyledContainer>
@@ -64,9 +70,15 @@ const DailyForecast: FC = () => {
               alt="sunset"
               color="white"
             />
-            Sunset
+            <Header variant="h3" color="white">
+              Sunset
+            </Header>
           </Title>
-          <Details>{timeConverter(day.Sun.Set)}</Details>
+          <Details>
+            <Text variant="body3" color="lightText1">
+              {timeConverter(day.Sun.Set)}
+            </Text>
+          </Details>
         </StyledContainer>
 
         <StyledContainer>
@@ -76,21 +88,31 @@ const DailyForecast: FC = () => {
               alt="temperature"
               color="white"
             />
-            Temperature{" "}
+            <Header variant="h3" color="white">
+              Temperature
+            </Header>
           </Title>
           <Details>
-            H:
-            {day.Temperature.Maximum.Value}°C L:
-            {day.Temperature.Minimum.Value}°C
+            <Text variant="body3" color="lightText1">
+              H:
+              {day.Temperature.Maximum.Value}°C L:
+              {day.Temperature.Minimum.Value}°C
+            </Text>
           </Details>
         </StyledContainer>
 
         <StyledContainer>
-          <Title>Feels like</Title>
+          <Title>
+            <Header variant="h3" color="white">
+              Feels like
+            </Header>
+          </Title>
           <Details>
-            H:
-            {day.RealFeelTemperature.Maximum.Value}°C L:
-            {day.RealFeelTemperature.Minimum.Value}°C
+            <Text variant="body3" color="lightText1">
+              H:
+              {day.RealFeelTemperature.Maximum.Value}°C L:
+              {day.RealFeelTemperature.Minimum.Value}°C{" "}
+            </Text>
           </Details>
         </StyledContainer>
 
@@ -101,20 +123,28 @@ const DailyForecast: FC = () => {
               alt="humidity"
               color="white"
             />
-            RH
+            <Header variant="h3" color="white">
+              RH
+            </Header>
           </Title>
-          <Details>{day.Day.RelativeHumidity.Average}%</Details>
+          <Details>
+            <Text variant="body3" color="lightText1">
+              {day.Day.RelativeHumidity.Average}%
+            </Text>
+          </Details>
         </StyledContainer>
 
         <StyledContainer>
           <Title>
             <StyledImage src={smallIcons.uvIcon} alt="uvIndex" color="white" />
-            UV Index
+            <Header variant="h3" color="white">
+              UV Index
+            </Header>
           </Title>
           <Details>
-            <span>
+            <Text variant="body3" color="lightText1">
               {day.AirAndPollen[5].Category} {day.AirAndPollen[5].Value}
-            </span>
+            </Text>
             <StyledSpan>
               <Input
                 type="range"
@@ -135,52 +165,80 @@ const DailyForecast: FC = () => {
               alt="solarIrradiance"
               color="white"
             />
-            Solar Irradiance
+            <Header variant="h3" color="white">
+              Solar Irradiance
+            </Header>
           </Title>
           <Details>
-            <span>{day.Day.SolarIrradiance.Value} W/m²</span>
+            <Text variant="body3" color="lightText1">
+              {day.Day.SolarIrradiance.Value} W/m²
+            </Text>
           </Details>
         </StyledContainer>
 
         <StyledContainer>
           <Title>
             <StyledImage src={smallIcons.rainIcon} alt="rain" color="white" />
-            Rain
+            <Header variant="h3" color="white">
+              Rain
+            </Header>
           </Title>
           <Details>
-            <span>{day.Day.Rain.Value} mm</span>
-            <span>Hours of Rain {day.Day.HoursOfRain}</span>
+            <Text variant="body3" color="lightText1">
+              {day.Day.Rain.Value} mm
+            </Text>
+            <Text variant="body3" color="lightText1">
+              Hours of Rain {day.Day.HoursOfRain}
+            </Text>
           </Details>
         </StyledContainer>
 
         <StyledContainer>
           <Title>
             <StyledImage src={smallIcons.windIcon} alt="wind" color="white" />
-            Wind
+            <Header variant="h3" color="white">
+              Wind
+            </Header>
           </Title>
           <Details>
-            <span>{day.Day.Wind.Speed.Value} km/h </span>
-            <span>Direction {day.Day.Wind.Direction.Localized}</span>
+            <Text variant="body3" color="lightText1">
+              {day.Day.Wind.Speed.Value} km/h{" "}
+            </Text>
+            <Text variant="body3" color="lightText1">
+              Direction {day.Day.Wind.Direction.Localized}
+            </Text>
           </Details>
         </StyledContainer>
 
         <StyledContainer>
           <Title>
             <StyledImage src={smallIcons.snowIcon} alt="snow" color="white" />
-            Snow
+            <Header variant="h3" color="white">
+              Snow
+            </Header>
           </Title>
           <Details>
-            <span>{day.Day.Snow.Value} cm</span>
-            <span>Hours of Snow {day.Day.HoursOfSnow}</span>
+            <Text variant="body3" color="lightText1">
+              {day.Day.Snow.Value} cm
+            </Text>
+            <Text variant="body3" color="lightText1">
+              Hours of Snow {day.Day.HoursOfSnow}
+            </Text>
           </Details>
         </StyledContainer>
 
         <StyledContainer>
           <Title>
             <StyledImage src={smallIcons.sunIcon} alt="sunIcon" color="white" />
-            Day description{" "}
+            <Header variant="h3" color="white">
+              Day description
+            </Header>
           </Title>
-          <Details>{day.Day.LongPhrase}</Details>
+          <Details>
+            <Text variant="body3" color="lightText1">
+              {day.Day.LongPhrase}
+            </Text>
+          </Details>
         </StyledContainer>
 
         <StyledContainer>
@@ -190,9 +248,15 @@ const DailyForecast: FC = () => {
               alt="moonIcon"
               color="white"
             />
-            Night description{" "}
+            <Header variant="h3" color="white">
+              Night description
+            </Header>
           </Title>
-          <Details>{day.Night.LongPhrase}</Details>
+          <Details>
+            <Text variant="body3" color="lightText1">
+              {day.Night.LongPhrase}
+            </Text>
+          </Details>
         </StyledContainer>
       </DailyForecastContainer>
     </MainForecastContainer>

@@ -14,23 +14,20 @@ export const TextWrapper = styled.div`
 export const DailyForecastContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 0.4rem;
 
   @media ${device.lg} {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0.6rem;
   }
   @media ${device.md} {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
   }
 
   @media ${device.sm} {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.4rem;
   }
 `;
 
@@ -59,15 +56,12 @@ export const Title = styled.div`
   align-items: center;
   gap: 0.3rem;
 
-  @media ${device.sm} {
-    display: block;
+  @media ${device.xs} {
+    flex-wrap: wrap;
   }
 `;
 
 export const Details = styled.div`
-  font-size: 0.8rem;
-  color: ${colors.lightText1};
-
   display: flex;
   flex-direction: column;
 `;
