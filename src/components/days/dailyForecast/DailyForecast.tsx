@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import {
   DailyForecastContainer,
   Details,
@@ -26,13 +26,13 @@ const DailyForecast: FC = () => {
   const { dayId, cityid } = useParams();
   const { weather } = useFetch(cityid);
 
-  if (dayId === undefined || weather === undefined) {
+  if (!dayId || !weather) {
     return <ErrorMessage>Can't find day</ErrorMessage>;
   }
   const dayNumber = parseInt(dayId);
   const day = weather.DailyForecasts[dayNumber];
 
-  if (day === undefined) {
+  if (!day) {
     return <ErrorMessage>Can't find day</ErrorMessage>;
   }
 

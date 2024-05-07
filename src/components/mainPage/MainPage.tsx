@@ -1,14 +1,21 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import SearchBar from "../searchBar/SearchBar";
 import DescriptionComponent from "./DescriptionComponent";
 import { MainPageContainer } from "./MainPage.style";
+import {
+  WeatherAction,
+  WeatherState,
+} from "../../interface/WeatherReducer.types";
 
-interface MainPageProps {}
+interface MainPageProps {
+  dispatch: React.Dispatch<WeatherAction>;
+  state: WeatherState;
+}
 
-const MainPage: FC<MainPageProps> = ({}) => {
+const MainPage: FC<MainPageProps> = ({ state, dispatch }) => {
   return (
     <MainPageContainer>
-      <SearchBar />
+      <SearchBar state={state} dispatch={dispatch} />
       <DescriptionComponent />
     </MainPageContainer>
   );

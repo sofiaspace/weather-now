@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { BarContainer, Input } from "./AirQualityBar.style";
 import { Forecast } from "../../../interface/forecast";
 

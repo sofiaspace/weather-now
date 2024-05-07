@@ -1,4 +1,4 @@
-import React, { FC, PropsWithChildren } from "react";
+import { FC, PropsWithChildren } from "react";
 import { TextContainer } from "./Text.style";
 import { TextColor, TextVariant } from "./Text.types";
 

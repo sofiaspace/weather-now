@@ -17,13 +17,10 @@ export const StyledHeading = styled.div<{
           color: ${colors[color]};
 
           @media ${device.md} {
-            font-size: 4rem;
+            font-size: 5rem;
           }
           @media ${device.sm} {
             font-size: 3rem;
-          }
-          @media ${device.xs} {
-            font-size: 2rem;
           }
         `;
 

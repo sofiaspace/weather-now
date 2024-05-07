@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { ImageContainer } from "./Weatherimg.styles";
 import { Forecast } from "../../../interface/forecast";
 import { iconConverter } from "../iconConverter/iconConverter";

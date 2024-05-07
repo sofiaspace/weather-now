@@ -5,26 +5,23 @@ import { useNavigate, useParams } from "react-router-dom";
 import { DailyForecast } from "../../interface/forecast";
 import useFetch from "../../hooks/useFetch";
 import ErrorMessage from "../ui/errorMessage/ErrorMessage";
-import useWeatherContext from "../../hooks/useWeatherContext";
 import Loading from "../ui/loadingMessage/Loading";
 
 const DisplayDays: FC = () => {
   const navigate = useNavigate();
   const { cityid } = useParams();
-  const { weather } = useFetch(cityid);
-  const { state } = useWeatherContext();
+  const { weather, isLoading } = useFetch(cityid);
 
-  if (state.isLoading === true) return <Loading />;
+  if (isLoading) return <Loading />;
 
-  if (weather === undefined)
-    return <ErrorMessage>Can't find forecast</ErrorMessage>;
+  if (!weather) return <ErrorMessage>Can't find forecast</ErrorMessage>;
 
   return (
     <DisplayDaysContainer>
-      {weather.DailyForecasts.map((DailyForecast: DailyForecast, i: number) => {
+      {weather.DailyForecasts.map((DailyForecast: DailyForecast, i) => {
         return (
           <DayComponent
-            key={i}
+            key={DailyForecast.Date.toString()}
             onClick={() => navigate(`/dailyForecast/${cityid}/${i}`)}
             DailyForecast={DailyForecast}
           />

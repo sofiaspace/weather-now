@@ -7,20 +7,54 @@ import {
   StyledUl,
 } from "./SearchBar.styles";
 import SearchSvg from "../ui/svgIcon/SearchSvg";
-import useWeatherContext from "../../hooks/useWeatherContext";
 import { NavLink } from "react-router-dom";
+import {
+  WeatherAction,
+  WeatherData,
+  WeatherState,
+} from "../../interface/WeatherReducer.types";
 
-const SearchBar: FC = () => {
-  const { state, dispatch } = useWeatherContext();
+interface SearchBarProps {
+  dispatch: React.Dispatch<WeatherAction>;
+  state: WeatherState;
+}
 
+const SearchBar: FC<SearchBarProps> = ({ state, dispatch }) => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    function handleClick(e: any) {
+    const fetchData = async () => {
+      try {
+        const res = await fetch(
+          `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${process.env.REACT_APP_API_KEY}=${state.location}`
+        );
+
+        const data = await res.json();
+
+        dispatch({
+          type: "fetchData",
+          payload: data.map((city: WeatherData) => ({
+            LocalizedName: city.LocalizedName,
+            Key: city.Key,
+            Country: city.Country,
+            AdministrativeArea: city.AdministrativeArea,
+          })),
+        });
+      } catch (err) {
+        throw new Error("Error fetching location data");
+      }
+    };
+    if (state.location.length > 0) {
+      fetchData();
+    }
+  }, [state.location, dispatch]);
+
+  useEffect(() => {
+    const handleClick = (e: any) => {
       if (ref.current && !ref.current.contains(e.target)) {
         dispatch({ type: "closeAutosearch" });
       }
-    }
+    };
     if (state.isOpen) {
       document.addEventListener("click", handleClick, true);
     } else {
