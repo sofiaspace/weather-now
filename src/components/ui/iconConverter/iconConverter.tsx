@@ -20,9 +20,9 @@ export const iconConverter = (iconPhrase: string) => {
       return "fog";
     case "Showers":
       return "showers";
-    case "Mostly Cloudy w/ Showers":
+    case "Mostly cloudy w/ showers":
       return "mostlyCloudyShowers";
-    case "Partly Sunny w/ Showers":
+    case "Partly sunny w/ showers":
       return "partlySunnyShowers";
     case "T-Storms":
       return "t-storms";

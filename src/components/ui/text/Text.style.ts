@@ -9,13 +9,17 @@ export const TextContainer = styled.span<{
 }>`
   ${({ type }) => {
     switch (type) {
-      case "body4":
+      case "body5":
         return css`
           font-size: 0.6rem;
 
           @media ${device.sm} {
-            text-wrap: nowrap;
+            width: 95%;
           }
+        `;
+      case "body4":
+        return css`
+          font-size: 0.7rem;
         `;
 
       case "body3":
@@ -31,6 +35,10 @@ export const TextContainer = styled.span<{
       case "body1":
         return css`
           font-size: 3.5rem;
+
+          @media ${device.md} {
+            font-size: 3.2rem;
+          }
         `;
     }
   }};

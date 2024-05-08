@@ -6,9 +6,10 @@ export const LocationForecastContainer = styled.div`
   flex-direction: column;
   flex: 1;
   justify-content: flex-end;
+  padding-top: 2rem;
 
   @media ${device.sm} {
-    margin-top: 1rem;
+    padding-top: 1rem;
     justify-content: center;
   }
 `;

@@ -6,9 +6,10 @@ import {
 } from "./LocationForecast.styles";
 import DisplayDays from "../days/DisplayDays";
 import { useNavigate } from "react-router-dom";
-import { smallIcons } from "../../styles/variables";
+
 import { StyledImage } from "../ui/pngIcon/pngIcon.styles";
 import { WeatherState } from "../../interface/WeatherReducer.types";
+import { pngIcon } from "../ui/pngIcon/pngIcon.variables";
 
 interface LocationForecastProps {
   state: WeatherState;
@@ -26,7 +27,7 @@ const LocationForecast: FC<LocationForecastProps> = ({ state }) => {
   return (
     <LocationForecastContainer>
       <StyledDiv>
-        <StyledImage src={smallIcons.mapIcon} alt="map" color="black" />
+        <StyledImage src={pngIcon.mapIcon} alt="map" color="black" />
         <Text variant="body2" color="white">
           {state.location}
         </Text>

@@ -10,8 +10,6 @@ import LocationForecast from "./components/locationForecast/LocationForecast";
 export const initialState = {
   location: "",
   fetchedData: [],
-  isSearched: false,
-  isLoading: false,
   isOpen: false,
 };
 
@@ -19,12 +17,6 @@ export const WeatherReduce = (state: WeatherState, action: WeatherAction) => {
   switch (action.type) {
     case "setLocation":
       return { ...state, location: action.payload };
-    case "loading":
-      return { ...state, isLoading: true };
-    case "stopLoading":
-      return { ...state, isLoading: false };
-    case "submitSearch":
-      return { ...state, isSearched: true };
     case "fetchData":
       return { ...state, fetchedData: action.payload };
     case "openAutosearch":
@@ -37,11 +29,12 @@ export const WeatherReduce = (state: WeatherState, action: WeatherAction) => {
   }
 };
 
-function App() {
+const App = () => {
   const [state, dispatch] = useReducer<Reducer<WeatherState, WeatherAction>>(
     WeatherReduce,
     initialState
   );
+
   return (
     <BrowserRouter>
       <AppContainer>
@@ -63,6 +56,6 @@ function App() {
       </AppContainer>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

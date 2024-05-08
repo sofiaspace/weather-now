@@ -3,7 +3,12 @@ import { colors } from "../../../styles/variables";
 import { device } from "../../../styles/mediaBreakpoints";
 
 export const MainForecastContainer = styled.div`
+  padding: 2rem 0;
   margin: auto 0;
+
+  @media ${device.sm} {
+    padding: 1rem 0;
+  }
 `;
 
 export const TextWrapper = styled.div`

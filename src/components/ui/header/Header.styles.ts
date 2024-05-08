@@ -20,7 +20,7 @@ export const StyledHeading = styled.div<{
             font-size: 5rem;
           }
           @media ${device.sm} {
-            font-size: 3rem;
+            font-size: 2.9rem;
           }
         `;
 

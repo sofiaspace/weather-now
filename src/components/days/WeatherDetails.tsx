@@ -34,7 +34,7 @@ const WeatherDetails: FC<WeatherDetailsProps> = ({ DailyForecast }) => {
       </DateContainer>
 
       <TemperatureContainer>
-        <Text variant="body4" color="lightText1">
+        <Text variant="body5" color="lightText1">
           {DailyForecast.Day.IconPhrase}
         </Text>
         <Text variant="body1" color="white">

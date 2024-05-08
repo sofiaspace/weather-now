@@ -12,21 +12,22 @@ const DisplayDays: FC = () => {
   const { cityid } = useParams();
   const { weather, isLoading } = useFetch(cityid);
 
-  if (isLoading) return <Loading />;
-
-  if (!weather) return <ErrorMessage>Can't find forecast</ErrorMessage>;
-
   return (
     <DisplayDaysContainer>
-      {weather.DailyForecasts.map((DailyForecast: DailyForecast, i) => {
-        return (
-          <DayComponent
-            key={DailyForecast.Date.toString()}
-            onClick={() => navigate(`/dailyForecast/${cityid}/${i}`)}
-            DailyForecast={DailyForecast}
-          />
-        );
-      })}
+      {isLoading && <Loading />}
+      {!weather ? (
+        <ErrorMessage>Can't find forecast</ErrorMessage>
+      ) : (
+        weather.DailyForecasts.map((DailyForecast: DailyForecast, i) => {
+          return (
+            <DayComponent
+              key={DailyForecast.Date.toString()}
+              onClick={() => navigate(`/dailyForecast/${cityid}/${i}`)}
+              DailyForecast={DailyForecast}
+            />
+          );
+        })
+      )}
     </DisplayDaysContainer>
   );
 };

@@ -6,10 +6,10 @@ export const SearchBarContainer = styled.form`
   display: flex;
   justify-content: center;
   position: relative;
-  padding-bottom: 3rem;
+  margin-bottom: 3rem;
 
-  @media ${device.lg} {
-    margin-top: 4rem;
+  @media ${device.sm} {
+    margin: 2rem 0 2rem;
   }
 `;
 
@@ -30,7 +30,7 @@ export const Input = styled.input`
   border-radius: 0.7rem;
   border-style: none;
   width: 100%;
-  padding: 0.5rem 2.4rem 0.5rem 2.4rem;
+  padding: 0.5rem 2.4rem;
   color: ${colors.lightText1};
   font-family: inherit;
 

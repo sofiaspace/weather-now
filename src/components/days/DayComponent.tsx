@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { DaysContainer } from "./DayComponent.styles";
 import WeatherImg from "../ui/weatherImg/WeatherImg";
 import WeatherDetails from "./WeatherDetails";

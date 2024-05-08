@@ -11,7 +11,7 @@ export const DisplayDaysContainer = styled.div`
   }
   @media ${device.sm} {
     flex-direction: column;
-    margin-top: 1rem;
+    margin-top: 1.8rem;
     gap: 0.6rem;
   }
 `;
@@ -26,8 +26,8 @@ export const DaysContainer = styled.div`
     transform: translateY(-1rem);
     cursor: pointer;
 
-    @media ${device.sm} {
-      transform: translateY(-0.5rem);
+    @media ${device.md} {
+      transform: translateY(0);
     }
   }
 

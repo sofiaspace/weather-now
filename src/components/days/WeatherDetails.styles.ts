@@ -22,7 +22,7 @@ export const DayContainer = styled.div`
     clip-path: none;
     min-height: unset;
     flex-direction: row;
-    padding: 0.5rem 0 0 7rem;
+    padding: 0.5rem 0 0.5rem 7rem;
   }
   @media ${device.xs} {
     padding-left: 5.5rem;
@@ -59,10 +59,13 @@ export const TemperatureContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: end;
+  text-align: right;
 
   @media ${device.sm} {
-    align-items: center;
-    padding-top: 0.2rem;
+    align-items: self-end;
+    justify-content: flex-end;
+    padding: 0 0.5rem;
+    width: min-content;
   }
 `;
 

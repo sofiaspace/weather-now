@@ -9,7 +9,7 @@ import {
   Title,
 } from "./DailyForecast.styles";
 import { useParams } from "react-router-dom";
-import { smallIcons } from "../../../styles/variables";
+
 import { timeConverter } from "../../ui/dateConverter/timeConverter";
 import { Input } from "../airQualityBar/AirQualityBar.style";
 import { StyledImage } from "../../ui/pngIcon/pngIcon.styles";
@@ -21,6 +21,7 @@ import {
 } from "../../ui/dateConverter/DateConverter";
 import useFetch from "../../../hooks/useFetch";
 import { Header } from "../../ui/header/Header";
+import { pngIcon } from "../../ui/pngIcon/pngIcon.variables";
 
 const DailyForecast: FC = () => {
   const { dayId, cityid } = useParams();
@@ -47,7 +48,7 @@ const DailyForecast: FC = () => {
         <StyledContainer>
           <Title>
             <StyledImage
-              src={smallIcons.sunriseIcon}
+              src={pngIcon.sunriseIcon}
               alt="sunrise"
               color="white"
             />
@@ -65,11 +66,7 @@ const DailyForecast: FC = () => {
 
         <StyledContainer>
           <Title>
-            <StyledImage
-              src={smallIcons.sunsetIcon}
-              alt="sunset"
-              color="white"
-            />
+            <StyledImage src={pngIcon.sunsetIcon} alt="sunset" color="white" />
             <Header variant="h3" color="white">
               Sunset
             </Header>
@@ -84,7 +81,7 @@ const DailyForecast: FC = () => {
         <StyledContainer>
           <Title>
             <StyledImage
-              src={smallIcons.temperatureIcon}
+              src={pngIcon.temperatureIcon}
               alt="temperature"
               color="white"
             />
@@ -119,7 +116,7 @@ const DailyForecast: FC = () => {
         <StyledContainer>
           <Title>
             <StyledImage
-              src={smallIcons.humidityIcon}
+              src={pngIcon.humidityIcon}
               alt="humidity"
               color="white"
             />
@@ -136,7 +133,7 @@ const DailyForecast: FC = () => {
 
         <StyledContainer>
           <Title>
-            <StyledImage src={smallIcons.uvIcon} alt="uvIndex" color="white" />
+            <StyledImage src={pngIcon.uvIcon} alt="uvIndex" color="white" />
             <Header variant="h3" color="white">
               UV Index
             </Header>
@@ -161,7 +158,7 @@ const DailyForecast: FC = () => {
         <StyledContainer>
           <Title>
             <StyledImage
-              src={smallIcons.solarIrradiance}
+              src={pngIcon.solarIrradiance}
               alt="solarIrradiance"
               color="white"
             />
@@ -178,7 +175,7 @@ const DailyForecast: FC = () => {
 
         <StyledContainer>
           <Title>
-            <StyledImage src={smallIcons.rainIcon} alt="rain" color="white" />
+            <StyledImage src={pngIcon.rainIcon} alt="rain" color="white" />
             <Header variant="h3" color="white">
               Rain
             </Header>
@@ -195,7 +192,7 @@ const DailyForecast: FC = () => {
 
         <StyledContainer>
           <Title>
-            <StyledImage src={smallIcons.windIcon} alt="wind" color="white" />
+            <StyledImage src={pngIcon.windIcon} alt="wind" color="white" />
             <Header variant="h3" color="white">
               Wind
             </Header>
@@ -212,7 +209,7 @@ const DailyForecast: FC = () => {
 
         <StyledContainer>
           <Title>
-            <StyledImage src={smallIcons.snowIcon} alt="snow" color="white" />
+            <StyledImage src={pngIcon.snowIcon} alt="snow" color="white" />
             <Header variant="h3" color="white">
               Snow
             </Header>
@@ -229,7 +226,7 @@ const DailyForecast: FC = () => {
 
         <StyledContainer>
           <Title>
-            <StyledImage src={smallIcons.sunIcon} alt="sunIcon" color="white" />
+            <StyledImage src={pngIcon.sunIcon} alt="sunIcon" color="white" />
             <Header variant="h3" color="white">
               Day description
             </Header>
@@ -243,11 +240,7 @@ const DailyForecast: FC = () => {
 
         <StyledContainer>
           <Title>
-            <StyledImage
-              src={smallIcons.moonIcon}
-              alt="moonIcon"
-              color="white"
-            />
+            <StyledImage src={pngIcon.moonIcon} alt="moonIcon" color="white" />
             <Header variant="h3" color="white">
               Night description
             </Header>

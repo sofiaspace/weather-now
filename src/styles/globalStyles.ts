@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 import { colors } from "./variables";
-import { device } from "./mediaBreakpoints";
 
 export const GlobalStyle = createGlobalStyle`
 *,*::before, *::after{
@@ -19,27 +18,10 @@ font-family: "Poppins", sans-serif;
 }
 
 #root{
-  width:inherit;
+  width:100%;
   height: 100%;
-  margin: 0 8rem;
 
   display: flex;
-  align-items: center;
 
   overflow: hidden;
-
-    @media ${device.xl}{
-      margin: 0 6rem;
-    }
-    @media ${device.lg}{
-      margin: 0 5rem;
-    }
-    @media ${device.md}{
-      margin: 0 3rem; 
-    }
-    @media ${device.sm}{
-      margin: auto;
-      align-items: unset;
-      overflow: auto;
-    }
 }`;

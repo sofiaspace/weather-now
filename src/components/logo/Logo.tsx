@@ -4,7 +4,7 @@ import { Header } from "../ui/header/Header";
 
 const Logo: FC = () => {
   return (
-    <LogoContainer>
+    <LogoContainer to="/">
       <Header variant="h1" color="lightText1">
         WeatherNow
       </Header>
